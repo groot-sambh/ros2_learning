@@ -1,0 +1,5 @@
+  File "/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py", line 2
+    0000000import rclpy
+          ^
+SyntaxError: invalid decimal literal
+

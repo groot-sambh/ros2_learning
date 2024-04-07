@@ -1,0 +1,45 @@
+[0.040s] Invoking command in '/home/sambhav/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[0.055s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.146s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.150s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.151s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.153s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.171s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.187s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.356s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.478s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.637s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.652s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.667s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.667s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.667s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.679s] -- Added test 'lint_cmake' to check CMake code style
+[0.680s] -- Added test 'xmllint' to check XML markup files
+[0.682s] -- Configuring done
+[0.698s] -- Generating done
+[0.700s] -- Build files have been written to: /home/sambhav/ros2_ws/build/my_robot_interfaces
+[0.712s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/compiler_depend.make' has modification time 17080 s in the future
+[0.712s] gmake[2]: Warning: File 'rosidl_adapter/my_robot_interfaces/srv/SetLed.idl' has modification time 17956 s in the future
+[0.716s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.717s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.718s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/compiler_depend.make' has modification time 17080 s in the future
+[0.718s] gmake[2]: Warning: File 'rosidl_adapter/my_robot_interfaces/srv/SetLed.idl' has modification time 17956 s in the future
+[0.722s] failed to create symbolic link '/home/sambhav/ros2_ws/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[0.722s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.723s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[0.723s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[0.723s] gmake[1]: *** Waiting for unfinished jobs....
+[0.991s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.998s] [  4%] Built target my_robot_interfaces__cpp
+[1.010s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[1.012s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.013s] gmake[2]: Warning: File 'rosidl_adapter/my_robot_interfaces/srv/SetLed.idl' has modification time 17955 s in the future
+[1.018s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.288s] [  8%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.c.o[0m
+[1.288s] [  8%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/hardware_status__functions.c.o[0m
+[1.293s] [ 10%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/set_led__functions.c.o[0m
+[1.328s] [ 12%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so[0m
+[1.346s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.351s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[1.352s] gmake: *** [Makefile:146: all] Error 2
+[1.354s] Invoked command in '/home/sambhav/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/my_robot_interfaces -- -j8 -l8

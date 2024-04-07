@@ -1,0 +1,78 @@
+[1.545s] Invoking command in '/home/sambhav/ros2_ws/src/my_py_pkg': AMENT_PREFIX_PATH=/home/sambhav/ros2_ws/src/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/src/install/my_robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/sambhav/ros2_ws/src/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sambhav/ros2_ws/src/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages:/home/sambhav/ros2_ws/src/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/src/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/src/build/my_py_pkg/install.log --single-version-externally-managed
+[2.026s] running egg_info
+[2.027s] writing ../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[2.027s] writing dependency_links to ../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[2.027s] writing entry points to ../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[2.028s] writing requirements to ../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[2.028s] writing top-level names to ../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[2.031s] reading manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.035s] writing manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.035s] running build
+[2.035s] running build_py
+[2.036s] copying my_py_pkg/__init__.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.036s] copying my_py_pkg/led_panel_node.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.036s] copying my_py_pkg/add_two_ints_server.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.036s] copying my_py_pkg/number_publisher.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.036s] copying my_py_pkg/my_first_node.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.037s] copying my_py_pkg/Battery_node.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.037s] copying my_py_pkg/first_year_task.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.037s] copying my_py_pkg/number_counter.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.037s] copying my_py_pkg/add_two_ints_client_no_oop.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.037s] copying my_py_pkg/add_two_ints_client.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.038s] copying my_py_pkg/robot_news_station.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.038s] copying my_py_pkg/hw_status_publisher.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.038s] copying my_py_pkg/smartphone.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.038s] copying my_py_pkg/turtle_controller_node.py -> /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[2.038s] running install
+[2.039s] running install_lib
+[2.040s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.040s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/led_panel_node.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.040s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.040s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/number_publisher.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.041s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.041s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/Battery_node.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.041s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/first_year_task.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.041s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/number_counter.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.042s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client_no_oop.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.042s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.042s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.042s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/hw_status_publisher.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.042s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/smartphone.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.043s] copying /home/sambhav/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/turtle_controller_node.py -> /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.043s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[2.043s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/led_panel_node.py to led_panel_node.cpython-310.pyc
+[2.044s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-310.pyc
+[2.045s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_publisher.py to number_publisher.cpython-310.pyc
+[2.046s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-310.pyc
+[2.046s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/Battery_node.py to Battery_node.cpython-310.pyc
+[2.047s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/first_year_task.py to first_year_task.cpython-310.pyc
+[2.047s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_counter.py to number_counter.cpython-310.pyc
+[2.048s] Sorry: IndentationError: unexpected indent (first_year_task.py, line 2)
+[2.048s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_client_no_oop.py to add_two_ints_client_no_oop.cpython-310.pyc
+[2.049s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_client.py to add_two_ints_client.cpython-310.pyc
+[2.050s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-310.pyc
+[2.050s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/hw_status_publisher.py to hw_status_publisher.cpython-310.pyc
+[2.051s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/smartphone.py to smartphone.cpython-310.pyc
+[2.051s] byte-compiling /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/turtle_controller_node.py to turtle_controller_node.cpython-310.pyc
+[2.052s] Sorry: IndentationError: unexpected indent (turtle_controller_node.py, line 2)
+[2.052s] running install_data
+[2.052s] copying resource/my_py_pkg -> /home/sambhav/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index/packages
+[2.053s] copying package.xml -> /home/sambhav/ros2_ws/src/install/my_py_pkg/share/my_py_pkg
+[2.053s] running install_egg_info
+[2.056s] removing '/home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.056s] Copying ../build/my_py_pkg/my_py_pkg.egg-info to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[2.057s] running install_scripts
+[2.095s] Installing add_two_ints_client script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.095s] Installing add_two_ints_client_no_oop script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.095s] Installing add_two_ints_server script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.096s] Installing battery_node script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.096s] Installing first_year_task script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.096s] Installing hw_status_publisher script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.096s] Installing led_panel_node script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.096s] Installing number_counter script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.097s] Installing number_publisher script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.097s] Installing py_node script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.097s] Installing robot_news_station script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.097s] Installing smartphone script to /home/sambhav/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[2.097s] writing list of installed files to '/home/sambhav/ros2_ws/src/build/my_py_pkg/install.log'
+[2.145s] Invoked command in '/home/sambhav/ros2_ws/src/my_py_pkg' returned '0': AMENT_PREFIX_PATH=/home/sambhav/ros2_ws/src/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/src/install/my_robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/sambhav/ros2_ws/src/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sambhav/ros2_ws/src/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages:/home/sambhav/ros2_ws/src/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/src/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/src/build/my_py_pkg/install.log --single-version-externally-managed

@@ -1,0 +1,23 @@
+[0.039s] Invoking command in '/home/sambhav/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[0.045s] gmake: Warning: File 'Makefile' has modification time 18611 s in the future
+[0.058s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 18611 s in the future
+[0.059s] gmake[2]: Warning: File 'CMakeFiles/my_robot_interfaces__cpp.dir/progress.make' has modification time 18611 s in the future
+[0.059s] gmake[2]: Warning: File 'CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/progress.make' has modification time 18611 s in the future
+[0.059s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/progress.make' has modification time 18611 s in the future
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[0.066s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.066s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.067s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.067s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/progress.make' has modification time 18611 s in the future
+[0.067s] gmake[2]: Warning: File 'CMakeFiles/my_robot_interfaces__cpp.dir/progress.make' has modification time 18611 s in the future
+[0.067s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.068s] gmake[2]: Warning: File 'CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/progress.make' has modification time 18611 s in the future
+[0.068s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.072s] failed to create symbolic link '/home/sambhav/ros2_ws/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[0.072s] [  2%] Built target my_robot_interfaces__cpp
+[0.072s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[0.073s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[0.073s] gmake[1]: *** Waiting for unfinished jobs....
+[0.073s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.074s] gmake: *** [Makefile:146: all] Error 2
+[0.076s] Invoked command in '/home/sambhav/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/my_robot_interfaces -- -j8 -l8

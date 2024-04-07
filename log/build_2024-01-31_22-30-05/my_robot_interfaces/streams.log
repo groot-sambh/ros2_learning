@@ -1,0 +1,24 @@
+[0.042s] Invoking command in '/home/sambhav/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/sambhav/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/sambhav/ros2_ws/install/my_robot_interfaces
+[0.062s] [33mCMake Warning (dev) at CMakeLists.txt:13:
+[0.062s]   Syntax Warning in cmake code at column 29
+[0.062s] 
+[0.062s]   Argument not separated from preceding token by whitespace.
+[0.062s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.062s] [0m
+[0.069s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.166s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.203s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.207s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.211s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.258s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.258s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[0.258s]   the CMAKE_CURRENT_SOURCE_DIR
+[0.258s]   '/home/sambhav/ros2_ws/src/my_robot_interfaces'
+[0.258s] Call Stack (most recent call first):
+[0.258s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[0.258s] 
+[0.258s] [0m
+[0.258s] -- Configuring incomplete, errors occurred!
+[0.258s] See also "/home/sambhav/ros2_ws/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.261s] Invoked command in '/home/sambhav/ros2_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/sambhav/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/sambhav/ros2_ws/install/my_robot_interfaces

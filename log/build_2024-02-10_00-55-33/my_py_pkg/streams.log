@@ -1,0 +1,35 @@
+[0.500s] Invoking command in '/home/sambhav/ros2_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.658s] running egg_info
+[0.659s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.659s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.659s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.659s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.659s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.660s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.661s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.661s] running build
+[0.661s] running build_py
+[0.661s] copying my_py_pkg/first_year_task.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.661s] running install
+[0.661s] running install_lib
+[0.662s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/first_year_task.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.663s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/first_year_task.py to first_year_task.cpython-310.pyc
+[0.663s] running install_data
+[0.663s] running install_egg_info
+[0.665s] removing '/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.665s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.665s] running install_scripts
+[0.678s] Installing add_two_ints_client script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.678s] Installing add_two_ints_client_no_oop script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.678s] Installing add_two_ints_server script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing battery_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing first_year_task script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing hw_status_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing led_panel_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing number_counter script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing number_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing py_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing robot_news_station script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] Installing smartphone script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.679s] writing list of installed files to '/home/sambhav/ros2_ws/build/my_py_pkg/install.log'
+[0.697s] Invoked command in '/home/sambhav/ros2_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

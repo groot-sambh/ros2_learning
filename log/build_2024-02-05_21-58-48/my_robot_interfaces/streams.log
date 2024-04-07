@@ -1,0 +1,35 @@
+[0.039s] Invoking command in '/home/sambhav/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[0.054s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.148s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.149s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.150s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.183s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.350s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.466s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.621s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.636s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.651s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.651s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.651s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.661s] -- Added test 'lint_cmake' to check CMake code style
+[0.661s] -- Added test 'xmllint' to check XML markup files
+[0.663s] -- Configuring done
+[0.680s] -- Generating done
+[0.681s] -- Build files have been written to: /home/sambhav/ros2_ws/build/my_robot_interfaces
+[0.697s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.703s] failed to create symbolic link '/home/sambhav/ros2_ws/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[0.703s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.703s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[0.703s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[0.703s] gmake[1]: *** Waiting for unfinished jobs....
+[0.956s] [  4%] Built target my_robot_interfaces__cpp
+[0.968s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[0.975s] [  8%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.c.o[0m
+[0.975s] [  8%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/set_led__functions.c.o[0m
+[0.975s] [ 10%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/hardware_status__functions.c.o[0m
+[1.012s] [ 12%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so[0m
+[1.043s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[1.044s] gmake: *** [Makefile:146: all] Error 2
+[1.045s] Invoked command in '/home/sambhav/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/my_robot_interfaces -- -j8 -l8

@@ -1,0 +1,26 @@
+[0.456s] Invoking command in '/home/sambhav/ros2_ws/build/my_py_pkg': AMENT_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/sambhav/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[0.615s] running develop
+[0.705s] running egg_info
+[0.705s] writing my_py_pkg.egg-info/PKG-INFO
+[0.706s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.706s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.706s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.706s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.707s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.707s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.708s] running build_ext
+[0.708s] Creating /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.709s] Installing add_two_ints_client script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing add_two_ints_client_no_oop script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing add_two_ints_server script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing hardware_status_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing number_counter script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing number_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing py_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing robot_news_station script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] Installing smartphone script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.709s] 
+[0.709s] Installed /home/sambhav/ros2_ws/build/my_py_pkg
+[0.709s] running install_data
+[0.709s] copying package.xml -> /home/sambhav/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.731s] Invoked command in '/home/sambhav/ros2_ws/build/my_py_pkg' returned '0': AMENT_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/sambhav/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/my_py_pkg/build --no-deps install_data

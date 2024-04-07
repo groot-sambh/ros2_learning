@@ -1,0 +1,17 @@
+[0.456s] Invoking command in '/home/sambhav/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[0.614s] running develop
+[0.709s] running egg_info
+[0.709s] writing my_py_pkg.egg-info/PKG-INFO
+[0.709s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.709s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.709s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.709s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.710s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.711s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.711s] running build_ext
+[0.711s] Creating /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.712s] Installing py_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.712s] 
+[0.712s] Installed /home/sambhav/ros2_ws/build/my_py_pkg
+[0.712s] running install_data
+[0.735s] Invoked command in '/home/sambhav/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/my_py_pkg/build --no-deps install_data

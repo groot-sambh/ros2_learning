@@ -1,0 +1,22 @@
+[0.479s] Invoking command in '/home/sambhav/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[0.651s] running develop
+[0.752s] running egg_info
+[0.753s] writing my_py_pkg.egg-info/PKG-INFO
+[0.753s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.753s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.753s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.753s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.754s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.754s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.755s] running build_ext
+[0.755s] Creating /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.756s] Installing add_two_ints_server script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.756s] Installing number_counter script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.756s] Installing number_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.756s] Installing py_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.756s] Installing robot_news_station script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.756s] Installing smartphone script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.756s] 
+[0.756s] Installed /home/sambhav/ros2_ws/build/my_py_pkg
+[0.756s] running install_data
+[0.778s] Invoked command in '/home/sambhav/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/my_py_pkg/build --no-deps install_data

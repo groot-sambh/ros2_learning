@@ -1,0 +1,24 @@
+[0.038s] Invoking command in '/home/sambhav/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/sambhav/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/sambhav/ros2_ws/install/my_robot_interfaces
+[0.046s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.163s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.163s]   By not providing "Findrosidl_default_generatorss.cmake" in
+[0.164s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[0.164s]   configuration file provided by "rosidl_default_generatorss", but CMake did
+[0.164s]   not find one.
+[0.164s] 
+[0.164s]   Could not find a package configuration file provided by
+[0.164s]   "rosidl_default_generatorss" with any of the following names:
+[0.164s] 
+[0.164s]     rosidl_default_generatorssConfig.cmake
+[0.164s]     rosidl_default_generatorss-config.cmake
+[0.164s] 
+[0.164s]   Add the installation prefix of "rosidl_default_generatorss" to
+[0.165s]   CMAKE_PREFIX_PATH or set "rosidl_default_generatorss_DIR" to a directory
+[0.165s]   containing one of the above files.  If "rosidl_default_generatorss"
+[0.165s]   provides a separate development package or SDK, be sure it has been
+[0.165s]   installed.
+[0.165s] 
+[0.165s] [0m
+[0.165s] -- Configuring incomplete, errors occurred!
+[0.165s] See also "/home/sambhav/ros2_ws/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[0.166s] Invoked command in '/home/sambhav/ros2_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/sambhav/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/sambhav/ros2_ws/install/my_robot_interfaces

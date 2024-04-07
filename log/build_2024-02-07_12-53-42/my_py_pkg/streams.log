@@ -1,0 +1,76 @@
+[0.458s] Invoking command in '/home/sambhav/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.608s] running egg_info
+[0.608s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[0.608s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.608s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.608s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.608s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.608s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.608s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.609s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.610s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.610s] running build
+[0.610s] running build_py
+[0.610s] creating /home/sambhav/ros2_ws/build/my_py_pkg/build
+[0.610s] creating /home/sambhav/ros2_ws/build/my_py_pkg/build/lib
+[0.610s] creating /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.610s] copying my_py_pkg/__init__.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.610s] copying my_py_pkg/led_panel_node.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.610s] copying my_py_pkg/add_two_ints_server.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.616s] copying my_py_pkg/number_publisher.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.616s] copying my_py_pkg/my_first_node.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.616s] copying my_py_pkg/Battery_node.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.617s] copying my_py_pkg/number_counter.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.617s] copying my_py_pkg/add_two_ints_client_no_oop.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.617s] copying my_py_pkg/add_two_ints_client.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.617s] copying my_py_pkg/robot_news_station.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.617s] copying my_py_pkg/hw_status_publisher.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.617s] copying my_py_pkg/smartphone.py -> /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.618s] running install
+[0.618s] running install_lib
+[0.618s] creating /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.618s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.618s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/led_panel_node.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.618s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.618s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/number_publisher.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/Battery_node.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/number_counter.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client_no_oop.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/hw_status_publisher.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] copying /home/sambhav/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/smartphone.py -> /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.619s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[0.619s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/led_panel_node.py to led_panel_node.cpython-310.pyc
+[0.620s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-310.pyc
+[0.620s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_publisher.py to number_publisher.cpython-310.pyc
+[0.620s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-310.pyc
+[0.620s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/Battery_node.py to Battery_node.cpython-310.pyc
+[0.620s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_counter.py to number_counter.cpython-310.pyc
+[0.621s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_client_no_oop.py to add_two_ints_client_no_oop.cpython-310.pyc
+[0.621s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_client.py to add_two_ints_client.cpython-310.pyc
+[0.621s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-310.pyc
+[0.621s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/hw_status_publisher.py to hw_status_publisher.cpython-310.pyc
+[0.622s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/smartphone.py to smartphone.cpython-310.pyc
+[0.622s] running install_data
+[0.622s] creating /home/sambhav/ros2_ws/install/my_py_pkg/share/ament_index
+[0.622s] creating /home/sambhav/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[0.622s] creating /home/sambhav/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.622s] copying resource/my_py_pkg -> /home/sambhav/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.622s] copying package.xml -> /home/sambhav/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.622s] running install_egg_info
+[0.623s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.624s] running install_scripts
+[0.637s] Installing add_two_ints_client script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing add_two_ints_client_no_oop script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing add_two_ints_server script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing hw_status_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing led_panel_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing number_counter script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing number_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing py_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing robot_news_station script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] Installing smartphone script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.637s] writing list of installed files to '/home/sambhav/ros2_ws/build/my_py_pkg/install.log'
+[0.656s] Invoked command in '/home/sambhav/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
