@@ -63,19 +63,18 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
     ]
 
     _fields_and_field_types = {
-        'turtles': 'my_robot_interfaces/Turtle',
+        'turtles': 'sequence<my_robot_interfaces/Turtle>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.NamespacedType(['my_robot_interfaces', 'msg'], 'Turtle'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['my_robot_interfaces', 'msg'], 'Turtle')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        from my_robot_interfaces.msg import Turtle
-        self.turtles = kwargs.get('turtles', Turtle())
+        self.turtles = kwargs.get('turtles', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -124,7 +123,17 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
     def turtles(self, value):
         if __debug__:
             from my_robot_interfaces.msg import Turtle
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, Turtle), \
-                "The 'turtles' field must be a sub message of type 'Turtle'"
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, Turtle) for v in value) and
+                 True), \
+                "The 'turtles' field must be a set or sequence and each value of type 'Turtle'"
         self._turtles = value

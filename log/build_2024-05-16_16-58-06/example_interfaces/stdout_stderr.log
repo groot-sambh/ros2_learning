@@ -1,0 +1,22 @@
+[  0%] Built target example_interfaces__cpp
+[ 12%] Built target example_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_example_interfaces
+[ 24%] Built target example_interfaces__rosidl_typesupport_cpp
+[ 49%] Built target example_interfaces__rosidl_typesupport_c
+[ 49%] Built target example_interfaces__rosidl_typesupport_introspection_cpp
+[ 62%] Built target example_interfaces__rosidl_typesupport_fastrtps_c
+[ 87%] Built target example_interfaces__rosidl_typesupport_introspection_c
+[ 87%] Built target example_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 87%] Built target example_interfaces
+[ 87%] Built target example_interfaces__py
+[ 99%] Built target example_interfaces__rosidl_generator_py
+[100%] Built target example_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target example_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target example_interfaces__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing example_interfaces.egg-info/PKG-INFO
+writing dependency_links to example_interfaces.egg-info/dependency_links.txt
+writing top-level names to example_interfaces.egg-info/top_level.txt
+reading manifest file 'example_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_example_interfaces_egg

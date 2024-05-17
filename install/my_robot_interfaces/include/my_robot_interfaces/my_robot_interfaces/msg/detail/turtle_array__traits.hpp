@@ -31,8 +31,19 @@ inline void to_flow_style_yaml(
   out << "{";
   // member: turtles
   {
-    out << "turtles: ";
-    to_flow_style_yaml(msg.turtles, out);
+    if (msg.turtles.size() == 0) {
+      out << "turtles: []";
+    } else {
+      out << "turtles: [";
+      size_t pending_items = msg.turtles.size();
+      for (auto item : msg.turtles) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -46,8 +57,18 @@ inline void to_block_style_yaml(
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "turtles:\n";
-    to_block_style_yaml(msg.turtles, out, indentation + 2);
+    if (msg.turtles.size() == 0) {
+      out << "turtles: []\n";
+    } else {
+      out << "turtles:\n";
+      for (auto item : msg.turtles) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 
@@ -97,11 +118,11 @@ inline const char * name<my_robot_interfaces::msg::TurtleArray>()
 
 template<>
 struct has_fixed_size<my_robot_interfaces::msg::TurtleArray>
-  : std::integral_constant<bool, has_fixed_size<my_robot_interfaces::msg::Turtle>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<my_robot_interfaces::msg::TurtleArray>
-  : std::integral_constant<bool, has_bounded_size<my_robot_interfaces::msg::Turtle>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<my_robot_interfaces::msg::TurtleArray>

@@ -57,9 +57,15 @@ cdr_serialize(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: turtles
-  my_robot_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
-    ros_message.turtles,
-    cdr);
+  {
+    size_t size = ros_message.turtles.size();
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      my_robot_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.turtles[i],
+        cdr);
+    }
+  }
   return true;
 }
 
@@ -70,8 +76,16 @@ cdr_deserialize(
   my_robot_interfaces::msg::TurtleArray & ros_message)
 {
   // Member: turtles
-  my_robot_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-    cdr, ros_message.turtles);
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    ros_message.turtles.resize(size);
+    for (size_t i = 0; i < size; i++) {
+      my_robot_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.turtles[i]);
+    }
+  }
 
   return true;
 }
@@ -90,10 +104,18 @@ get_serialized_size(
   (void)wchar_size;
 
   // Member: turtles
+  {
+    size_t array_size = ros_message.turtles.size();
 
-  current_alignment +=
-    my_robot_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
-    ros_message.turtles, current_alignment);
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        my_robot_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.turtles[index], current_alignment);
+    }
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -120,7 +142,11 @@ max_serialized_size_TurtleArray(
 
   // Member: turtles
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
 
     last_member_size = 0;

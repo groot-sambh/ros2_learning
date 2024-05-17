@@ -22,7 +22,7 @@ my_robot_interfaces__msg__TurtleArray__init(my_robot_interfaces__msg__TurtleArra
     return false;
   }
   // turtles
-  if (!my_robot_interfaces__msg__Turtle__init(&msg->turtles)) {
+  if (!my_robot_interfaces__msg__Turtle__Sequence__init(&msg->turtles, 0)) {
     my_robot_interfaces__msg__TurtleArray__fini(msg);
     return false;
   }
@@ -36,7 +36,7 @@ my_robot_interfaces__msg__TurtleArray__fini(my_robot_interfaces__msg__TurtleArra
     return;
   }
   // turtles
-  my_robot_interfaces__msg__Turtle__fini(&msg->turtles);
+  my_robot_interfaces__msg__Turtle__Sequence__fini(&msg->turtles);
 }
 
 bool
@@ -46,7 +46,7 @@ my_robot_interfaces__msg__TurtleArray__are_equal(const my_robot_interfaces__msg_
     return false;
   }
   // turtles
-  if (!my_robot_interfaces__msg__Turtle__are_equal(
+  if (!my_robot_interfaces__msg__Turtle__Sequence__are_equal(
       &(lhs->turtles), &(rhs->turtles)))
   {
     return false;
@@ -63,7 +63,7 @@ my_robot_interfaces__msg__TurtleArray__copy(
     return false;
   }
   // turtles
-  if (!my_robot_interfaces__msg__Turtle__copy(
+  if (!my_robot_interfaces__msg__Turtle__Sequence__copy(
       &(input->turtles), &(output->turtles)))
   {
     return false;

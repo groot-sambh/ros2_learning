@@ -1,0 +1,36 @@
+[0.461s] Invoking command in '/home/sambhav/ros2_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[0.627s] running egg_info
+[0.628s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.628s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.628s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.628s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.628s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.629s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.630s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.630s] running build
+[0.630s] running build_py
+[0.631s] running install
+[0.631s] running install_lib
+[0.632s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/first_year_task.py to first_year_task.cpython-310.pyc
+[0.632s] byte-compiling /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/turtle_controller_node.py to turtle_controller_node.cpython-310.pyc
+[0.632s] running install_data
+[0.632s] running install_egg_info
+[0.632s] Sorry: IndentationError: unexpected indent (first_year_task.py, line 2)
+[0.632s] Sorry: IndentationError: unexpected indent (turtle_controller_node.py, line 2)
+[0.633s] removing '/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.633s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.634s] running install_scripts
+[0.647s] Installing add_two_ints_client script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing add_two_ints_client_no_oop script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing add_two_ints_server script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing battery_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing first_year_task script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing hw_status_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing led_panel_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing number_counter script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing number_publisher script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing py_node script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing robot_news_station script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] Installing smartphone script to /home/sambhav/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.648s] writing list of installed files to '/home/sambhav/ros2_ws/build/my_py_pkg/install.log'
+[0.668s] Invoked command in '/home/sambhav/ros2_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/my_py_pkg/prefix_override:/home/sambhav/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/sambhav/ros2_ws/build/my_py_pkg/build install --record /home/sambhav/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data

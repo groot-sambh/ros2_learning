@@ -1,0 +1,24 @@
+[0.011s] Invoking command in '/home/sambhav/ros2_ws/build/example_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/turtlesim_catch_them_all:/home/sambhav/ros2_ws/install/my_py_pkg:/home/sambhav/my_swarm/install/bot1_controller:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/example_interfaces -- -j8 -l8
+[0.059s] [  0%] Built target example_interfaces__cpp
+[0.067s] [ 12%] Built target example_interfaces__rosidl_generator_c
+[0.073s] [ 12%] Built target ament_cmake_python_copy_example_interfaces
+[0.096s] [ 24%] Built target example_interfaces__rosidl_typesupport_cpp
+[0.102s] [ 49%] Built target example_interfaces__rosidl_typesupport_c
+[0.102s] [ 49%] Built target example_interfaces__rosidl_typesupport_introspection_cpp
+[0.110s] [ 62%] Built target example_interfaces__rosidl_typesupport_fastrtps_c
+[0.110s] [ 87%] Built target example_interfaces__rosidl_typesupport_introspection_c
+[0.110s] [ 87%] Built target example_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.128s] [ 87%] Built target example_interfaces
+[0.146s] [ 87%] Built target example_interfaces__py
+[0.171s] [ 99%] Built target example_interfaces__rosidl_generator_py
+[0.189s] [100%] Built target example_interfaces__rosidl_typesupport_c__pyext
+[0.189s] [100%] Built target example_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.196s] [100%] Built target example_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.290s] running egg_info
+[0.290s] writing example_interfaces.egg-info/PKG-INFO
+[0.290s] writing dependency_links to example_interfaces.egg-info/dependency_links.txt
+[0.290s] writing top-level names to example_interfaces.egg-info/top_level.txt
+[0.292s] reading manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[0.293s] writing manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[0.316s] [100%] Built target ament_cmake_python_build_example_interfaces_egg
+[0.325s] Invoked command in '/home/sambhav/ros2_ws/build/example_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/turtlesim_catch_them_all:/home/sambhav/ros2_ws/install/my_py_pkg:/home/sambhav/my_swarm/install/bot1_controller:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/example_interfaces -- -j8 -l8
