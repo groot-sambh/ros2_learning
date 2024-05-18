@@ -1,0 +1,3 @@
+[console_scripts]
+count_until_server = action_py.count_until_server:main
+
