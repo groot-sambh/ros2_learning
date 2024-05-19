@@ -1,0 +1,20 @@
+[0.458s] Invoking command in '/home/sambhav/ros2_ws/build/action_py': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/action_py/prefix_override:/home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/action_py/build --no-deps symlink_data --force
+[0.646s] running develop
+[0.758s] running egg_info
+[0.759s] writing action_py.egg-info/PKG-INFO
+[0.759s] writing dependency_links to action_py.egg-info/dependency_links.txt
+[0.759s] writing entry points to action_py.egg-info/entry_points.txt
+[0.759s] writing requirements to action_py.egg-info/requires.txt
+[0.759s] writing top-level names to action_py.egg-info/top_level.txt
+[0.760s] reading manifest file 'action_py.egg-info/SOURCES.txt'
+[0.761s] writing manifest file 'action_py.egg-info/SOURCES.txt'
+[0.761s] running build_ext
+[0.761s] Creating /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action-py.egg-link (link to .)
+[0.762s] Installing count_until_client script to /home/sambhav/ros2_ws/install/action_py/lib/action_py
+[0.762s] Installing count_until_server script to /home/sambhav/ros2_ws/install/action_py/lib/action_py
+[0.762s] 
+[0.762s] Installed /home/sambhav/ros2_ws/build/action_py
+[0.762s] running symlink_data
+[0.762s] symbolically linking /home/sambhav/ros2_ws/build/action_py/resource/action_py -> /home/sambhav/ros2_ws/install/action_py/share/ament_index/resource_index/packages
+[0.762s] symbolically linking /home/sambhav/ros2_ws/build/action_py/package.xml -> /home/sambhav/ros2_ws/install/action_py/share/action_py
+[0.786s] Invoked command in '/home/sambhav/ros2_ws/build/action_py' returned '0': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/action_py/prefix_override:/home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/sambhav/ros2_ws/build/action_py/build --no-deps symlink_data --force

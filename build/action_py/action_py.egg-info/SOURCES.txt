@@ -9,8 +9,13 @@ setup.py
 ../../build/action_py/action_py.egg-info/top_level.txt
 ../../build/action_py/action_py.egg-info/zip-safe
 action_py/__init__.py
+action_py/count_until_client.py
 action_py/count_until_server.py
+action_py.egg-info/PKG-INFO
+action_py.egg-info/SOURCES.txt
+action_py.egg-info/dependency_links.txt
+action_py.egg-info/entry_points.txt
+action_py.egg-info/requires.txt
+action_py.egg-info/top_level.txt
+action_py.egg-info/zip-safe
 resource/action_py
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
