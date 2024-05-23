@@ -1,0 +1,36 @@
+[0.773s] Invoking command in '/home/sambhav/ros2_ws/build/action_py': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/action_py/prefix_override:/home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/sambhav/ros2_ws/build/action_py/build
+[1.022s] running develop
+[1.147s] Removing /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action-py.egg-link (link to .)
+[1.234s] Invoked command in '/home/sambhav/ros2_ws/build/action_py' returned '0': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/action_py/prefix_override:/home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/sambhav/ros2_ws/build/action_py/build
+[1.235s] Invoking command in '/home/sambhav/ros2_ws/src/action_py': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/action_py/prefix_override:/home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/action_py build --build-base /home/sambhav/ros2_ws/build/action_py/build install --record /home/sambhav/ros2_ws/build/action_py/install.log --single-version-externally-managed install_data --force
+[1.430s] running egg_info
+[1.430s] writing ../../build/action_py/action_py.egg-info/PKG-INFO
+[1.430s] writing dependency_links to ../../build/action_py/action_py.egg-info/dependency_links.txt
+[1.431s] writing entry points to ../../build/action_py/action_py.egg-info/entry_points.txt
+[1.431s] writing requirements to ../../build/action_py/action_py.egg-info/requires.txt
+[1.431s] writing top-level names to ../../build/action_py/action_py.egg-info/top_level.txt
+[1.432s] reading manifest file '../../build/action_py/action_py.egg-info/SOURCES.txt'
+[1.433s] writing manifest file '../../build/action_py/action_py.egg-info/SOURCES.txt'
+[1.433s] running build
+[1.433s] running build_py
+[1.433s] copying action_py/count_until_server.py -> /home/sambhav/ros2_ws/build/action_py/build/lib/action_py
+[1.433s] copying action_py/count_until_client.py -> /home/sambhav/ros2_ws/build/action_py/build/lib/action_py
+[1.433s] running install
+[1.433s] running install_lib
+[1.434s] creating /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py
+[1.434s] copying /home/sambhav/ros2_ws/build/action_py/build/lib/action_py/__init__.py -> /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py
+[1.434s] copying /home/sambhav/ros2_ws/build/action_py/build/lib/action_py/count_until_server.py -> /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py
+[1.434s] copying /home/sambhav/ros2_ws/build/action_py/build/lib/action_py/count_until_client.py -> /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py
+[1.435s] byte-compiling /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py/__init__.py to __init__.cpython-310.pyc
+[1.435s] byte-compiling /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py/count_until_server.py to count_until_server.cpython-310.pyc
+[1.435s] byte-compiling /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py/count_until_client.py to count_until_client.cpython-310.pyc
+[1.436s] running install_data
+[1.436s] copying resource/action_py -> /home/sambhav/ros2_ws/install/action_py/share/ament_index/resource_index/packages
+[1.436s] copying package.xml -> /home/sambhav/ros2_ws/install/action_py/share/action_py
+[1.436s] running install_egg_info
+[1.437s] Copying ../../build/action_py/action_py.egg-info to /home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages/action_py-0.0.0-py3.10.egg-info
+[1.438s] running install_scripts
+[1.453s] Installing count_until_client script to /home/sambhav/ros2_ws/install/action_py/lib/action_py
+[1.453s] Installing count_until_server script to /home/sambhav/ros2_ws/install/action_py/lib/action_py
+[1.453s] writing list of installed files to '/home/sambhav/ros2_ws/build/action_py/install.log'
+[1.475s] Invoked command in '/home/sambhav/ros2_ws/src/action_py' returned '0': CMAKE_PREFIX_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces:/home/sambhav/ros2_ws/install/my_robot_bringup:/home/sambhav/ros2_ws/install/my_robot_description:/home/sambhav/ros2_ws/install/example_interfaces:/home/sambhav/my_swarm/install/swarm_description LD_LIBRARY_PATH=/home/sambhav/ros2_ws/install/my_robot_interfaces/lib:/home/sambhav/ros2_ws/install/example_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo-11/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/sambhav/ros2_ws/build/action_py/prefix_override:/home/sambhav/ros2_ws/install/action_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/action_py build --build-base /home/sambhav/ros2_ws/build/action_py/build install --record /home/sambhav/ros2_ws/build/action_py/install.log --single-version-externally-managed install_data --force
