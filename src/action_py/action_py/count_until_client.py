@@ -12,7 +12,7 @@ class CountUntilClientNode(Node):
         self.count_until_client_ = ActionClient(self, CountUntil, "count_until")
 
     def send_goal(self, target_number, period):
-        #Wait for the server
+        # Wait for the server
         self.count_until_client_.wait_for_server()
 
         # Create a goal
