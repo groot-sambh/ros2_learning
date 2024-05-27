@@ -1,0 +1,47 @@
+running egg_info
+creating ../build/action_py/action_py.egg-info
+writing ../build/action_py/action_py.egg-info/PKG-INFO
+writing dependency_links to ../build/action_py/action_py.egg-info/dependency_links.txt
+writing entry points to ../build/action_py/action_py.egg-info/entry_points.txt
+writing requirements to ../build/action_py/action_py.egg-info/requires.txt
+writing top-level names to ../build/action_py/action_py.egg-info/top_level.txt
+writing manifest file '../build/action_py/action_py.egg-info/SOURCES.txt'
+reading manifest file '../build/action_py/action_py.egg-info/SOURCES.txt'
+writing manifest file '../build/action_py/action_py.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sambhav/ros2_ws/src/build/action_py/build
+creating /home/sambhav/ros2_ws/src/build/action_py/build/lib
+creating /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py
+copying action_py/__init__.py -> /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py
+copying action_py/robot_movement_server.py -> /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py
+copying action_py/robot_movement_client.py -> /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py
+copying action_py/count_until_server.py -> /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py
+copying action_py/count_until_client.py -> /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py
+running install
+running install_lib
+creating /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py
+copying /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py/__init__.py -> /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py
+copying /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py/robot_movement_server.py -> /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py
+copying /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py/robot_movement_client.py -> /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py
+copying /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py/count_until_server.py -> /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py
+copying /home/sambhav/ros2_ws/src/build/action_py/build/lib/action_py/count_until_client.py -> /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py
+byte-compiling /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py/robot_movement_server.py to robot_movement_server.cpython-310.pyc
+byte-compiling /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py/robot_movement_client.py to robot_movement_client.cpython-310.pyc
+byte-compiling /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py/count_until_server.py to count_until_server.cpython-310.pyc
+byte-compiling /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py/count_until_client.py to count_until_client.cpython-310.pyc
+running install_data
+creating /home/sambhav/ros2_ws/src/install/action_py/share/ament_index
+creating /home/sambhav/ros2_ws/src/install/action_py/share/ament_index/resource_index
+creating /home/sambhav/ros2_ws/src/install/action_py/share/ament_index/resource_index/packages
+copying resource/action_py -> /home/sambhav/ros2_ws/src/install/action_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/sambhav/ros2_ws/src/install/action_py/share/action_py
+running install_egg_info
+Copying ../build/action_py/action_py.egg-info to /home/sambhav/ros2_ws/src/install/action_py/lib/python3.10/site-packages/action_py-0.0.0-py3.10.egg-info
+running install_scripts
+Installing count_until_client script to /home/sambhav/ros2_ws/src/install/action_py/lib/action_py
+Installing count_until_server script to /home/sambhav/ros2_ws/src/install/action_py/lib/action_py
+Installing robot_movement client script to /home/sambhav/ros2_ws/src/install/action_py/lib/action_py
+Installing robot_movement_server script to /home/sambhav/ros2_ws/src/install/action_py/lib/action_py
+writing list of installed files to '/home/sambhav/ros2_ws/src/build/action_py/install.log'

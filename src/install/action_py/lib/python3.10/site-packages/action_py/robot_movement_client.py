@@ -4,8 +4,6 @@ from rclpy.node import Node
 from my_robot_interfaces.action import RobotMovement
 from rclpy.action import ActionClient
 from rclpy.action.client import ClientGoalHandle, GoalStatus
-from rclpy.executors import MultiThreadedExecutor
-from rclpy.callback_groups import ReentrantCallbackGroup
      
      
 class RobotMovementClientNode(Node):
@@ -14,7 +12,7 @@ class RobotMovementClientNode(Node):
         self.robot_movement_client_ = ActionClient(self, RobotMovement, "robot_movement")
 
     def send_goal(self, target_position, velocity):
-        self.robot_movement_client_.wait_for_server()
+        self.count_until_client_.wait_for_server()
 
         goal = RobotMovement.Goal()
         goal.position = target_position
@@ -40,7 +38,6 @@ class RobotMovementClientNode(Node):
         elif status == GoalStatus.STATUS_CANCELED:
             self.get_logger().warn("Canceled")
         result = future.result().result
-        self.get_logger().info(str(result))
         self.get_logger().info("Result :" + str(result.reached_position))
         self.get_logger().info("Result :" + str(result.message))
 

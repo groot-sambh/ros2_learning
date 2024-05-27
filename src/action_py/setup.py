@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             "count_until_server = action_py.count_until_server:main",
-            "count_until_client = action_py.count_until_client:main"
+            "count_until_client = action_py.count_until_client:main",
+            "robot_movement_client = action_py.robot_movement_client:main",
+            "robot_movement_server = action_py.robot_movement_server:main"
         ],
     },
 )
