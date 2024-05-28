@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'action_py'
+package_name = 'lifecycle_py'
 
 setup(
     name=package_name,
@@ -13,15 +13,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='sambhav',
-    maintainer_email='sambhavparmar84@gmail.com',
+    maintainer='ed',
+    maintainer_email='todo.todo@todo.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "count_until_server = action_py.count_until_server:main",
-            "count_until_client = action_py.count_until_client:main",
+            "number_publisher = lifecycle_py.number_publisher:main"
         ],
     },
 )
