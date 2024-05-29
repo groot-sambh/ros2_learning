@@ -21,7 +21,9 @@ class NumberPublisherNode(LifecycleNode):
         self.number_publisher_ = self.create_lifecycle_publisher(Int64, "number", 10)
         self.number_timer_ = self.create_timer(
             1.0 / self.publish_frequency_, self.publish_number)
-        return TransitionCallbackReturn.SUCCESS
+        self.number_timer_.cancel()
+        raise Exception()
+        return TransitionCallbackReturn.ERROR # if it has ERROR here then it will
     
     #destroy ros2 communications, disconnect the hardware
     def on_cleanup(self, previous_state: LifecycleState):
@@ -32,12 +34,13 @@ class NumberPublisherNode(LifecycleNode):
     
     #Activate/Enable hardware
     def on_activate(self, previous_state: LifecycleState):
-        self.get_logger().info("IN on_cleanup")
+        self.get_logger().info("IN on_activate")
+        self.number_timer_.reset()
         return super().on_activate(previous_state)
     
     #deactivate/disable hardware
     def on_deactivate(self, previous_state: LifecycleState):
-        self.get_logger().info("IN on_cleanup")
+        self.get_logger().info("IN on_deactivate")
         return super().on_deactivate(previous_state)
     
     def on_shutdown(self, previous_state: LifecycleState):
@@ -45,7 +48,13 @@ class NumberPublisherNode(LifecycleNode):
         self.destroy_lifecycle_publisher(self.number_publisher_)
         self.destroy_timer(self.number_timer_)
         return TransitionCallbackReturn.SUCCESS
-
+    
+    def on_error(self, previous_state: LifecycleState):
+        self.get_logger().info("IN on_error")
+        self.destroy_lifecycle_publisher(self.number_publisher_)
+        self.destroy_timer(self.number_timer_)
+        #do some checks, if okay, return SUCCESS, if not FAILURE
+        return TransitionCallbackReturn.FAILURE
     
     
     def publish_number(self):
