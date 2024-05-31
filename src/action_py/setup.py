@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             "count_until_server = action_py.count_until_server:main",
             "count_until_client = action_py.count_until_client:main",
+            "move_robot_server = action_py.move_robot_server:main"
         ],
     },
 )
