@@ -32,7 +32,7 @@ class MoveRobotServer(Node):
         while rclpy.ok():
             diff = position - self.robot_position_
             if diff == 0:
-                result.reached_position = self.robot_position_
+                result.position = self.robot_position_
                 result.message ="Success"
                 goal_handle.succeed()
                 return result
