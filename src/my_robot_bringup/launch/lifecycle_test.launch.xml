@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="lifecycle_py" exec="number_publisher" name = "number_publisher" />
+    <node pkg="lifecycle_py" exec="lifecycle_node_manager" name="my_node_manager">
+        <param name="managed_node_name"
+               value="number_publisher" />
+    </node>
+</launch>
