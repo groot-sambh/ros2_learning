@@ -55,10 +55,7 @@ class CountUntilClientNode(Node):
     def goal_feedback_callback(self, feedback_msg):
         number= feedback_msg.feedback.current_number
         self.get_logger().info("Recieved feedback: " + str(number))
-
-    
-     
-     
+        
 def main(args=None):
     rclpy.init(args=args)
     node = CountUntilClientNode()
