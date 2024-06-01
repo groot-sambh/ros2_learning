@@ -4,7 +4,7 @@ import time
 from rclpy.node import Node
 from my_robot_interfaces.action import RobotMovement
 from rclpy.action import ActionServer
-from rclpy.action.server import ServerGoalHandle
+from rclpy.action.server import ServerGoalHandle, GoalResponse
      
      
 class MoveRobotServer(Node):
@@ -14,9 +14,19 @@ class MoveRobotServer(Node):
         self.move_robot_server_ = ActionServer(self,
                                                RobotMovement,
                                                "robot_movement",
+                                               goal_callback=self.goal_callback,
                                                execute_callback=self.execute_callback)
         self.get_logger().info("action server has been started")
         self.get_logger().info("Robot Position: " + str(self.robot_position_))
+
+    def goal_callback(self, goal_request: RobotMovement.Goal):
+        self.get_logger().info("Recieved a Goal")
+
+        if goal_request.position not in range(0, 100) or goal_request.velocity <= 0:
+            self.get_logger().info("Invalid position/velocity, rejecting the goal")
+            return GoalResponse.REJECT
+        self.get_logger().info("accepting the goal")
+        return GoalResponse.ACCEPT
 
     def execute_callback(self, goal_handle: ServerGoalHandle):
 
