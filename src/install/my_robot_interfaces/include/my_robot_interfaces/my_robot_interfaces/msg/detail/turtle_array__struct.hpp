@@ -38,25 +38,24 @@ struct TurtleArray_
   using Type = TurtleArray_<ContainerAllocator>;
 
   explicit TurtleArray_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : turtles(_init)
   {
     (void)_init;
   }
 
   explicit TurtleArray_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : turtles(_alloc, _init)
   {
     (void)_init;
+    (void)_alloc;
   }
 
   // field types and members
   using _turtles_type =
-    my_robot_interfaces::msg::Turtle_<ContainerAllocator>;
+    std::vector<my_robot_interfaces::msg::Turtle_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<my_robot_interfaces::msg::Turtle_<ContainerAllocator>>>;
   _turtles_type turtles;
 
   // setters for named parameter idiom
   Type & set__turtles(
-    const my_robot_interfaces::msg::Turtle_<ContainerAllocator> & _arg)
+    const std::vector<my_robot_interfaces::msg::Turtle_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<my_robot_interfaces::msg::Turtle_<ContainerAllocator>>> & _arg)
   {
     this->turtles = _arg;
     return *this;

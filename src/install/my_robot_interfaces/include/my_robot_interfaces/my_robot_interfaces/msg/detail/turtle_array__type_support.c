@@ -37,23 +37,78 @@ void my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__
   my_robot_interfaces__msg__TurtleArray__fini(message_memory);
 }
 
+size_t my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__size_function__TurtleArray__turtles(
+  const void * untyped_member)
+{
+  const my_robot_interfaces__msg__Turtle__Sequence * member =
+    (const my_robot_interfaces__msg__Turtle__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtles(
+  const void * untyped_member, size_t index)
+{
+  const my_robot_interfaces__msg__Turtle__Sequence * member =
+    (const my_robot_interfaces__msg__Turtle__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtles(
+  void * untyped_member, size_t index)
+{
+  my_robot_interfaces__msg__Turtle__Sequence * member =
+    (my_robot_interfaces__msg__Turtle__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__fetch_function__TurtleArray__turtles(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const my_robot_interfaces__msg__Turtle * item =
+    ((const my_robot_interfaces__msg__Turtle *)
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtles(untyped_member, index));
+  my_robot_interfaces__msg__Turtle * value =
+    (my_robot_interfaces__msg__Turtle *)(untyped_value);
+  *value = *item;
+}
+
+void my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__assign_function__TurtleArray__turtles(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  my_robot_interfaces__msg__Turtle * item =
+    ((my_robot_interfaces__msg__Turtle *)
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtles(untyped_member, index));
+  const my_robot_interfaces__msg__Turtle * value =
+    (const my_robot_interfaces__msg__Turtle *)(untyped_value);
+  *item = *value;
+}
+
+bool my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resize_function__TurtleArray__turtles(
+  void * untyped_member, size_t size)
+{
+  my_robot_interfaces__msg__Turtle__Sequence * member =
+    (my_robot_interfaces__msg__Turtle__Sequence *)(untyped_member);
+  my_robot_interfaces__msg__Turtle__Sequence__fini(member);
+  return my_robot_interfaces__msg__Turtle__Sequence__init(member, size);
+}
+
 static rosidl_typesupport_introspection_c__MessageMember my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__TurtleArray_message_member_array[1] = {
   {
     "turtles",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(my_robot_interfaces__msg__TurtleArray, turtles),  // bytes offset in struct
     NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__size_function__TurtleArray__turtles,  // size() function pointer
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtles,  // get_const(index) function pointer
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtles,  // get(index) function pointer
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__fetch_function__TurtleArray__turtles,  // fetch(index, &value) function pointer
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__assign_function__TurtleArray__turtles,  // assign(index, value) function pointer
+    my_robot_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resize_function__TurtleArray__turtles  // resize(index) function pointer
   }
 };
 

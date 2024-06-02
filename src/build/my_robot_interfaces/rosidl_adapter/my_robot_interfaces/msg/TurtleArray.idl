@@ -7,7 +7,7 @@
 module my_robot_interfaces {
   module msg {
     struct TurtleArray {
-      my_robot_interfaces::msg::Turtle turtles;
+      sequence<my_robot_interfaces::msg::Turtle> turtles;
     };
   };
 };

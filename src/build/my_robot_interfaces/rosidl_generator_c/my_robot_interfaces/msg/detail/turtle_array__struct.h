@@ -24,7 +24,7 @@ extern "C"
 /// Struct defined in msg/TurtleArray in the package my_robot_interfaces.
 typedef struct my_robot_interfaces__msg__TurtleArray
 {
-  my_robot_interfaces__msg__Turtle turtles;
+  my_robot_interfaces__msg__Turtle__Sequence turtles;
 } my_robot_interfaces__msg__TurtleArray;
 
 // Struct for a sequence of my_robot_interfaces__msg__TurtleArray.

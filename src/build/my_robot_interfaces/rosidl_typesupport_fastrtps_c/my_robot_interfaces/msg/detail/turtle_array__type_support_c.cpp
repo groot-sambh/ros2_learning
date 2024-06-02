@@ -68,10 +68,15 @@ static bool _TurtleArray__cdr_serialize(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, my_robot_interfaces, msg, Turtle
       )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->turtles, cdr))
-    {
-      return false;
+    size_t size = ros_message->turtles.size;
+    auto array_ptr = ros_message->turtles.data;
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_serialize(
+          &array_ptr[i], cdr))
+      {
+        return false;
+      }
     }
   }
 
@@ -94,10 +99,23 @@ static bool _TurtleArray__cdr_deserialize(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, my_robot_interfaces, msg, Turtle
       )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->turtles))
-    {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->turtles.data) {
+      my_robot_interfaces__msg__Turtle__Sequence__fini(&ros_message->turtles);
+    }
+    if (!my_robot_interfaces__msg__Turtle__Sequence__init(&ros_message->turtles, size)) {
+      fprintf(stderr, "failed to create array for field 'turtles'");
       return false;
+    }
+    auto array_ptr = ros_message->turtles.data;
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_deserialize(
+          cdr, &array_ptr[i]))
+      {
+        return false;
+      }
     }
   }
 
@@ -119,9 +137,17 @@ size_t get_serialized_size_my_robot_interfaces__msg__TurtleArray(
   (void)wchar_size;
 
   // field.name turtles
+  {
+    size_t array_size = ros_message->turtles.size;
+    auto array_ptr = ros_message->turtles.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-  current_alignment += get_serialized_size_my_robot_interfaces__msg__Turtle(
-    &(ros_message->turtles), current_alignment);
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += get_serialized_size_my_robot_interfaces__msg__Turtle(
+        &array_ptr[index], current_alignment);
+    }
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -153,7 +179,11 @@ size_t max_serialized_size_my_robot_interfaces__msg__TurtleArray(
 
   // member: turtles
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
 
     last_member_size = 0;

@@ -30,7 +30,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     "srv/SetLed.srv"
     "srv/CatchTurtle.srv"
     "action/CountUntil.action"
-    "action/RobotMovement.action"
+    "action/MoveRobot.action"
 
 )
 ament_export_dependencies(rosidl_default_runtime)
