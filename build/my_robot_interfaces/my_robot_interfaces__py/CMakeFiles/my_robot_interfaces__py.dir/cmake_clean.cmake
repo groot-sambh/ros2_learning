@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_robot_interfaces/action/__init__.py"
   "../rosidl_generator_py/my_robot_interfaces/action/_count_until.py"
   "../rosidl_generator_py/my_robot_interfaces/action/_count_until_s.c"
+  "../rosidl_generator_py/my_robot_interfaces/action/_robot_movement.py"
+  "../rosidl_generator_py/my_robot_interfaces/action/_robot_movement_s.c"
   "../rosidl_generator_py/my_robot_interfaces/msg/__init__.py"
   "../rosidl_generator_py/my_robot_interfaces/msg/_hardware_status.py"
   "../rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c"

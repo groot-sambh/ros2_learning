@@ -11,6 +11,8 @@ setup.py
 action_py/__init__.py
 action_py/count_until_client.py
 action_py/count_until_server.py
+action_py/move_robot_client.py
+action_py/move_robot_server.py
 resource/action_py
 test/test_copyright.py
 test/test_flake8.py
