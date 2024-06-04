@@ -1,0 +1,18 @@
+<launch>
+    <node pkg = "lifecycle_py" exec = "move_robot_server_copy" name = "move_robot_server_a">
+        <param name="robot_name"
+               value="A"/>
+    </node>
+    <node pkg = "lifecycle_py" exec = "move_robot_server_copy" name = "move_robot_server_b">
+        <param name="robot_name"
+               value="B"/>
+    </node>
+    <node pkg = "lifecycle_py" exec = "move_robot_server_copy" name = "move_robot_server_c">
+        <param name="robot_name"
+               value="C"/>
+    </node>
+    <node pkg = "lifecycle_py" exec = "move_robot_server_copy" name = "move_robot_server_d">
+        <param name="robot_name"
+               value="D"/>
+    </node>
+</launch>
