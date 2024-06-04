@@ -2,7 +2,6 @@
 import rclpy
 import time
 import threading
-from rclpy.node import Node
 from rclpy.action import ActionServer
 from rclpy.action.server import ServerGoalHandle, GoalResponse, CancelResponse
 from my_robot_interfaces.action import MoveRobot
@@ -10,7 +9,6 @@ from rclpy.executors import MultiThreadedExecutor
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.lifecycle import LifecycleNode
 from rclpy.lifecycle.node import LifecycleState, TransitionCallbackReturn
-TransitionCallbackReturn
 
 class MoveRobotServerNode(LifecycleNode):
     def __init__(self):
@@ -24,7 +22,44 @@ class MoveRobotServerNode(LifecycleNode):
         self.server_name =self.get_parameter("action_server_name").value
         self.get_logger().info("lifecycle action server has been started")
         
+    #the part of the lifecycle node
+    def on_configure(self, previous_state: LifecycleState):
+        self.get_logger().info("In On_Configure")
+        self.move_robot_server_ = ActionServer(
+            self,
+            MoveRobot,
+            self.server_name,
+            goal_callback=self.goal_callback,
+            cancel_callback=self.cancel_callback,
+            execute_callback=self.execute_callback,
+            callback_group=ReentrantCallbackGroup()) 
+        self.get_logger().info("Action server has been started")
+        self.get_logger().info("Robot position: " + str(self.robot_position_))   
+        return TransitionCallbackReturn.SUCCESS
+    
+    def on_cleanup(self, previous_state: LifecycleState):
+        self.get_logger().info("In On_cleanup")
+        self.move_robot_server_.destroy()
+        return TransitionCallbackReturn.SUCCESS
+    
+    def on_activate(self, previous_state: LifecycleState):
+        self.get_logger().info("In On_activate")
+        self.activate = True
 
+    def on_deactivate(self, state: LifecycleState):
+        self.get_logger().info("In On_deactivate")
+        with self.goal_lock_:
+                if self.goal_handle_ is not None and self.goal_handle_.is_active:
+                    self.goal_handle_.abort()
+        self.activate = False
+
+    def on_shutdown(self, state: LifecycleState):
+        self.get_logger().info("In On_shutdown")
+        self.move_robot_server_.destroy()
+        return TransitionCallbackReturn.SUCCESS
+
+
+    #the part of the action server callbacks
     def goal_callback(self, goal_request: MoveRobot.Goal):
         self.get_logger().info("Received a new goal")
         if self.activate:
@@ -33,12 +68,14 @@ class MoveRobotServerNode(LifecycleNode):
                 return GoalResponse.REJECT
             
             # New goal is valid, abort previous goal and accept new goal
-            if self.goal_handle_ is not None and self.goal_handle_.is_active:
-                self.goal_handle_.abort()
+            with self.goal_lock_:
+                if self.goal_handle_ is not None and self.goal_handle_.is_active:
+                    self.goal_handle_.abort()
             
             self.get_logger().info("Accept goal")
             return GoalResponse.ACCEPT
         else:
+            self.get_logger().info("node not activated")
             return GoalResponse.REJECT
     
     def cancel_callback(self, goal_handle: ServerGoalHandle):
@@ -96,38 +133,7 @@ class MoveRobotServerNode(LifecycleNode):
 
             time.sleep(1.0)
 
-    #the part of the lifecycle node
-    def on_configure(self, previous_state: LifecycleState):
-        self.get_logger().info("In On_Configure")
-        self.move_robot_server_ = ActionServer(
-            self,
-            MoveRobot,
-            self.server_name,
-            goal_callback=self.goal_callback,
-            cancel_callback=self.cancel_callback,
-            execute_callback=self.execute_callback,
-            callback_group=ReentrantCallbackGroup()) 
-        self.get_logger().info("Action server has been started")
-        self.get_logger().info("Robot position: " + str(self.robot_position_))   
-        return TransitionCallbackReturn.SUCCESS
     
-    def on_cleanup(self, previous_state: LifecycleState):
-        self.get_logger().info("In On_cleanup")
-        self.destroy_service(self.move_robot_server_)
-        return TransitionCallbackReturn.SUCCESS
-    
-    def on_activate(self, previous_state: LifecycleState):
-        self.get_logger().info("In On_activate")
-        self.activate = True
-
-    def on_deactivate(self, state: LifecycleState):
-        self.get_logger().info("In On_deactivate")
-        self.activate = False
-
-    def on_shutdown(self, state: LifecycleState):
-        self.get_logger().info("In On_shutdown")
-        self.destroy_service(self.move_robot_server_)
-        return TransitionCallbackReturn.SUCCESS
 
 def main(args=None):
     rclpy.init(args=args)
