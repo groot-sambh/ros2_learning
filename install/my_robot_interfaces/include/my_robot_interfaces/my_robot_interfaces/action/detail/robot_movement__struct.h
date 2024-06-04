@@ -44,7 +44,7 @@ typedef struct my_robot_interfaces__action__RobotMovement_Goal__Sequence
 /// Struct defined in action/RobotMovement in the package my_robot_interfaces.
 typedef struct my_robot_interfaces__action__RobotMovement_Result
 {
-  int64_t position;
+  int64_t reached_position;
   rosidl_runtime_c__String message;
 } my_robot_interfaces__action__RobotMovement_Result;
 

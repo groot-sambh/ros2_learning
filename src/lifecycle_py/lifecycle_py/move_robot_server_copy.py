@@ -18,17 +18,18 @@ class MoveRobotServerNode(LifecycleNode):
         self.goal_handle_: ServerGoalHandle = None
         self.robot_position_ = 50
         self.move_robot_server_ = None
-        self.declare_parameter("action_server_name", rclpy.Parameter.Type.STRING)
-        self.server_name =self.get_parameter("action_server_name").value
         self.get_logger().info("lifecycle action server has been started")
         
     #the part of the lifecycle node
     def on_configure(self, previous_state: LifecycleState):
+
+        self.declare_parameter("robot_name", rclpy.Parameter.Type.STRING)
+        self.robot_name =self.get_parameter("robot_name").value
         self.get_logger().info("In On_Configure")
         self.move_robot_server_ = ActionServer(
             self,
             MoveRobot,
-            self.server_name,
+            "move_robot_" + self.robot_name,
             goal_callback=self.goal_callback,
             cancel_callback=self.cancel_callback,
             execute_callback=self.execute_callback,
@@ -38,6 +39,8 @@ class MoveRobotServerNode(LifecycleNode):
         return TransitionCallbackReturn.SUCCESS
     
     def on_cleanup(self, previous_state: LifecycleState):
+        self.undeclare_parameter("robot_name")
+        self.robot_name = ""
         self.get_logger().info("In On_cleanup")
         self.move_robot_server_.destroy()
         return TransitionCallbackReturn.SUCCESS
@@ -54,6 +57,8 @@ class MoveRobotServerNode(LifecycleNode):
         self.activate = False
 
     def on_shutdown(self, state: LifecycleState):
+        self.undeclare_parameter("robot_name")
+        self.robot_name = ""
         self.get_logger().info("In On_shutdown")
         self.move_robot_server_.destroy()
         return TransitionCallbackReturn.SUCCESS

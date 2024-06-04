@@ -118,7 +118,7 @@ rosidl_typesupport_introspection_cpp/example_interfaces/action/detail/fibonacci_
 rosidl_typesupport_introspection_cpp/example_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 rosidl_typesupport_introspection_cpp/example_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sambhav/ros2_ws/build/example_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ introspection for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/sambhav/ros2_ws/build/example_interfaces/rosidl_typesupport_introspection_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/sambhav/ros2_ws/build/example_interfaces/rosidl_typesupport_introspection_cpp__arguments.json
 
 rosidl_typesupport_introspection_cpp/example_interfaces/msg/detail/bool__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/example_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/example_interfaces/msg/detail/bool__rosidl_typesupport_introspection_cpp.hpp

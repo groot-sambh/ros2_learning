@@ -388,7 +388,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_interfaces/action" TYPE FILE FILES "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/action/RobotMovement.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_interfaces/action" TYPE FILE FILES "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/action/MoveRobot.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -448,7 +448,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_interfaces/action" TYPE FILE FILES "/home/sambhav/ros2_ws/src/my_robot_interfaces/action/RobotMovement.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_interfaces/action" TYPE FILE FILES "/home/sambhav/ros2_ws/src/my_robot_interfaces/action/MoveRobot.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

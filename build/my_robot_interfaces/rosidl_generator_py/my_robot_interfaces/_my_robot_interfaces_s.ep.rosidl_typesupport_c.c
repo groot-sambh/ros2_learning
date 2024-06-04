@@ -2727,39 +2727,39 @@ _register_action_type__action__count_until(PyObject * pymodule)
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
-#include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
-#include "my_robot_interfaces/action/detail/robot_movement__struct.h"
-#include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+#include "my_robot_interfaces/action/detail/move_robot__type_support.h"
+#include "my_robot_interfaces/action/detail/move_robot__struct.h"
+#include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__goal__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__goal__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_Goal__create();
+  return my_robot_interfaces__action__MoveRobot_Goal__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__goal__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__goal__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_Goal * ros_message = (my_robot_interfaces__action__RobotMovement_Goal *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_Goal__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_Goal * ros_message = (my_robot_interfaces__action__MoveRobot_Goal *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_Goal__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__goal__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__goal__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__goal__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__goal__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_Goal);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_Goal);
 
 int8_t
-_register_msg_type__action__robot_movement__goal(PyObject * pymodule)
+_register_msg_type__action__move_robot__goal(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__goal__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__goal__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -2767,7 +2767,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__goal",
+    "create_ros_message_msg__action__move_robot__goal",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -2778,7 +2778,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__goal__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__goal__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -2786,7 +2786,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__goal",
+    "destroy_ros_message_msg__action__move_robot__goal",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -2797,7 +2797,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__goal__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__goal__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -2805,7 +2805,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__goal",
+    "convert_from_py_msg__action__move_robot__goal",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -2816,7 +2816,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__goal__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__goal__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -2824,7 +2824,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__goal",
+    "convert_to_py_msg__action__move_robot__goal",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -2835,7 +2835,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_Goal),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_Goal),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -2843,7 +2843,7 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__goal",
+    "type_support_msg__action__move_robot__goal",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -2867,41 +2867,41 @@ _register_msg_type__action__robot_movement__goal(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__result__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__result__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_Result__create();
+  return my_robot_interfaces__action__MoveRobot_Result__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__result__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__result__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_Result * ros_message = (my_robot_interfaces__action__RobotMovement_Result *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_Result__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_Result * ros_message = (my_robot_interfaces__action__MoveRobot_Result *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_Result__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__result__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__result__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__result__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__result__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_Result);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_Result);
 
 int8_t
-_register_msg_type__action__robot_movement__result(PyObject * pymodule)
+_register_msg_type__action__move_robot__result(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__result__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__result__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -2909,7 +2909,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__result",
+    "create_ros_message_msg__action__move_robot__result",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -2920,7 +2920,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__result__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__result__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -2928,7 +2928,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__result",
+    "destroy_ros_message_msg__action__move_robot__result",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -2939,7 +2939,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__result__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__result__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -2947,7 +2947,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__result",
+    "convert_from_py_msg__action__move_robot__result",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -2958,7 +2958,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__result__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__result__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -2966,7 +2966,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__result",
+    "convert_to_py_msg__action__move_robot__result",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -2977,7 +2977,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_Result),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_Result),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -2985,7 +2985,7 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__result",
+    "type_support_msg__action__move_robot__result",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3009,41 +3009,41 @@ _register_msg_type__action__robot_movement__result(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__feedback__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__feedback__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_Feedback__create();
+  return my_robot_interfaces__action__MoveRobot_Feedback__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__feedback__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__feedback__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_Feedback * ros_message = (my_robot_interfaces__action__RobotMovement_Feedback *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_Feedback__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_Feedback * ros_message = (my_robot_interfaces__action__MoveRobot_Feedback *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_Feedback__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__feedback__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__feedback__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__feedback__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__feedback__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_Feedback);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_Feedback);
 
 int8_t
-_register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
+_register_msg_type__action__move_robot__feedback(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__feedback__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3051,7 +3051,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__feedback",
+    "create_ros_message_msg__action__move_robot__feedback",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3062,7 +3062,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__feedback__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3070,7 +3070,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__feedback",
+    "destroy_ros_message_msg__action__move_robot__feedback",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3081,7 +3081,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__feedback__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3089,7 +3089,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__feedback",
+    "convert_from_py_msg__action__move_robot__feedback",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3100,7 +3100,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__feedback__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3108,7 +3108,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__feedback",
+    "convert_to_py_msg__action__move_robot__feedback",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3119,7 +3119,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_Feedback),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_Feedback),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3127,7 +3127,7 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__feedback",
+    "type_support_msg__action__move_robot__feedback",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3151,41 +3151,41 @@ _register_msg_type__action__robot_movement__feedback(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__send_goal__request__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__send_goal__request__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_SendGoal_Request__create();
+  return my_robot_interfaces__action__MoveRobot_SendGoal_Request__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__send_goal__request__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__send_goal__request__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_SendGoal_Request * ros_message = (my_robot_interfaces__action__RobotMovement_SendGoal_Request *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_SendGoal_Request__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_SendGoal_Request * ros_message = (my_robot_interfaces__action__MoveRobot_SendGoal_Request *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_SendGoal_Request__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__send_goal__request__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__send_goal__request__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__send_goal__request__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__send_goal__request__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_SendGoal_Request);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_SendGoal_Request);
 
 int8_t
-_register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodule)
+_register_msg_type__action__move_robot__send_goal__request(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__request__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__request__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3193,7 +3193,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__send_goal__request",
+    "create_ros_message_msg__action__move_robot__send_goal__request",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3204,7 +3204,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__request__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__request__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3212,7 +3212,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__send_goal__request",
+    "destroy_ros_message_msg__action__move_robot__send_goal__request",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3223,7 +3223,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__request__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__request__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3231,7 +3231,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__send_goal__request",
+    "convert_from_py_msg__action__move_robot__send_goal__request",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3242,7 +3242,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__request__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__request__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3250,7 +3250,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__send_goal__request",
+    "convert_to_py_msg__action__move_robot__send_goal__request",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3261,7 +3261,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_SendGoal_Request),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_SendGoal_Request),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3269,7 +3269,7 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__send_goal__request",
+    "type_support_msg__action__move_robot__send_goal__request",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3293,41 +3293,41 @@ _register_msg_type__action__robot_movement__send_goal__request(PyObject * pymodu
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__send_goal__response__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__send_goal__response__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_SendGoal_Response__create();
+  return my_robot_interfaces__action__MoveRobot_SendGoal_Response__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__send_goal__response__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__send_goal__response__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_SendGoal_Response * ros_message = (my_robot_interfaces__action__RobotMovement_SendGoal_Response *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_SendGoal_Response__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_SendGoal_Response * ros_message = (my_robot_interfaces__action__MoveRobot_SendGoal_Response *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_SendGoal_Response__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__send_goal__response__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__send_goal__response__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__send_goal__response__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__send_goal__response__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_SendGoal_Response);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_SendGoal_Response);
 
 int8_t
-_register_msg_type__action__robot_movement__send_goal__response(PyObject * pymodule)
+_register_msg_type__action__move_robot__send_goal__response(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__response__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__response__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3335,7 +3335,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__send_goal__response",
+    "create_ros_message_msg__action__move_robot__send_goal__response",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3346,7 +3346,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__response__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__response__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3354,7 +3354,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__send_goal__response",
+    "destroy_ros_message_msg__action__move_robot__send_goal__response",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3365,7 +3365,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__response__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__response__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3373,7 +3373,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__send_goal__response",
+    "convert_from_py_msg__action__move_robot__send_goal__response",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3384,7 +3384,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__send_goal__response__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__send_goal__response__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3392,7 +3392,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__send_goal__response",
+    "convert_to_py_msg__action__move_robot__send_goal__response",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3403,7 +3403,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_SendGoal_Response),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_SendGoal_Response),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3411,7 +3411,7 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__send_goal__response",
+    "type_support_msg__action__move_robot__send_goal__response",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3424,15 +3424,15 @@ _register_msg_type__action__robot_movement__send_goal__response(PyObject * pymod
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, RobotMovement_SendGoal)();
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, MoveRobot_SendGoal)();
 
 int8_t
-_register_srv_type__action__robot_movement__send_goal(PyObject * pymodule)
+_register_srv_type__action__move_robot__send_goal(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, RobotMovement_SendGoal)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, MoveRobot_SendGoal)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3440,7 +3440,7 @@ _register_srv_type__action__robot_movement__send_goal(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_srv__action__robot_movement__send_goal",
+    "type_support_srv__action__move_robot__send_goal",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3464,41 +3464,41 @@ _register_srv_type__action__robot_movement__send_goal(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__get_result__request__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__get_result__request__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_GetResult_Request__create();
+  return my_robot_interfaces__action__MoveRobot_GetResult_Request__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__get_result__request__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__get_result__request__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_GetResult_Request * ros_message = (my_robot_interfaces__action__RobotMovement_GetResult_Request *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_GetResult_Request__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_GetResult_Request * ros_message = (my_robot_interfaces__action__MoveRobot_GetResult_Request *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_GetResult_Request__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__get_result__request__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__get_result__request__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__get_result__request__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__get_result__request__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_GetResult_Request);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_GetResult_Request);
 
 int8_t
-_register_msg_type__action__robot_movement__get_result__request(PyObject * pymodule)
+_register_msg_type__action__move_robot__get_result__request(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__request__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__request__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3506,7 +3506,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__get_result__request",
+    "create_ros_message_msg__action__move_robot__get_result__request",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3517,7 +3517,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__request__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__request__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3525,7 +3525,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__get_result__request",
+    "destroy_ros_message_msg__action__move_robot__get_result__request",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3536,7 +3536,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__request__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__request__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3544,7 +3544,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__get_result__request",
+    "convert_from_py_msg__action__move_robot__get_result__request",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3555,7 +3555,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__request__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__request__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3563,7 +3563,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__get_result__request",
+    "convert_to_py_msg__action__move_robot__get_result__request",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3574,7 +3574,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_GetResult_Request),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_GetResult_Request),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3582,7 +3582,7 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__get_result__request",
+    "type_support_msg__action__move_robot__get_result__request",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3606,41 +3606,41 @@ _register_msg_type__action__robot_movement__get_result__request(PyObject * pymod
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__get_result__response__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__get_result__response__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_GetResult_Response__create();
+  return my_robot_interfaces__action__MoveRobot_GetResult_Response__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__get_result__response__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__get_result__response__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_GetResult_Response * ros_message = (my_robot_interfaces__action__RobotMovement_GetResult_Response *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_GetResult_Response__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_GetResult_Response * ros_message = (my_robot_interfaces__action__MoveRobot_GetResult_Response *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_GetResult_Response__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__get_result__response__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__get_result__response__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__get_result__response__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__get_result__response__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_GetResult_Response);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_GetResult_Response);
 
 int8_t
-_register_msg_type__action__robot_movement__get_result__response(PyObject * pymodule)
+_register_msg_type__action__move_robot__get_result__response(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__response__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__response__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3648,7 +3648,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__get_result__response",
+    "create_ros_message_msg__action__move_robot__get_result__response",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3659,7 +3659,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__response__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__response__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3667,7 +3667,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__get_result__response",
+    "destroy_ros_message_msg__action__move_robot__get_result__response",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3678,7 +3678,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__response__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__response__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3686,7 +3686,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__get_result__response",
+    "convert_from_py_msg__action__move_robot__get_result__response",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3697,7 +3697,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__get_result__response__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__get_result__response__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3705,7 +3705,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__get_result__response",
+    "convert_to_py_msg__action__move_robot__get_result__response",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3716,7 +3716,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_GetResult_Response),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_GetResult_Response),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3724,7 +3724,7 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__get_result__response",
+    "type_support_msg__action__move_robot__get_result__response",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3737,15 +3737,15 @@ _register_msg_type__action__robot_movement__get_result__response(PyObject * pymo
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_service_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, RobotMovement_GetResult)();
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, MoveRobot_GetResult)();
 
 int8_t
-_register_srv_type__action__robot_movement__get_result(PyObject * pymodule)
+_register_srv_type__action__move_robot__get_result(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, RobotMovement_GetResult)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, MoveRobot_GetResult)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3753,7 +3753,7 @@ _register_srv_type__action__robot_movement__get_result(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_srv__action__robot_movement__get_result",
+    "type_support_srv__action__move_robot__get_result",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3777,41 +3777,41 @@ _register_srv_type__action__robot_movement__get_result(PyObject * pymodule)
 // already included above
 // #include "rosidl_runtime_c/action_type_support_struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__type_support.h"
+// #include "my_robot_interfaces/action/detail/move_robot__type_support.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__struct.h"
+// #include "my_robot_interfaces/action/detail/move_robot__struct.h"
 // already included above
-// #include "my_robot_interfaces/action/detail/robot_movement__functions.h"
+// #include "my_robot_interfaces/action/detail/move_robot__functions.h"
 
-static void * my_robot_interfaces__action__robot_movement__feedback_message__create_ros_message(void)
+static void * my_robot_interfaces__action__move_robot__feedback_message__create_ros_message(void)
 {
-  return my_robot_interfaces__action__RobotMovement_FeedbackMessage__create();
+  return my_robot_interfaces__action__MoveRobot_FeedbackMessage__create();
 }
 
-static void my_robot_interfaces__action__robot_movement__feedback_message__destroy_ros_message(void * raw_ros_message)
+static void my_robot_interfaces__action__move_robot__feedback_message__destroy_ros_message(void * raw_ros_message)
 {
-  my_robot_interfaces__action__RobotMovement_FeedbackMessage * ros_message = (my_robot_interfaces__action__RobotMovement_FeedbackMessage *)raw_ros_message;
-  my_robot_interfaces__action__RobotMovement_FeedbackMessage__destroy(ros_message);
+  my_robot_interfaces__action__MoveRobot_FeedbackMessage * ros_message = (my_robot_interfaces__action__MoveRobot_FeedbackMessage *)raw_ros_message;
+  my_robot_interfaces__action__MoveRobot_FeedbackMessage__destroy(ros_message);
 }
 
 ROSIDL_GENERATOR_C_IMPORT
-bool my_robot_interfaces__action__robot_movement__feedback_message__convert_from_py(PyObject * _pymsg, void * ros_message);
+bool my_robot_interfaces__action__move_robot__feedback_message__convert_from_py(PyObject * _pymsg, void * ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * my_robot_interfaces__action__robot_movement__feedback_message__convert_to_py(void * raw_ros_message);
+PyObject * my_robot_interfaces__action__move_robot__feedback_message__convert_to_py(void * raw_ros_message);
 
 
 ROSIDL_GENERATOR_C_IMPORT
 const rosidl_message_type_support_t *
-ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_FeedbackMessage);
+ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_FeedbackMessage);
 
 int8_t
-_register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule)
+_register_msg_type__action__move_robot__feedback_message(PyObject * pymodule)
 {
   int8_t err;
 
   PyObject * pyobject_create_ros_message = NULL;
   pyobject_create_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback_message__create_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__feedback_message__create_ros_message,
     NULL, NULL);
   if (!pyobject_create_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3819,7 +3819,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "create_ros_message_msg__action__robot_movement__feedback_message",
+    "create_ros_message_msg__action__move_robot__feedback_message",
     pyobject_create_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3830,7 +3830,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
 
   PyObject * pyobject_destroy_ros_message = NULL;
   pyobject_destroy_ros_message = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback_message__destroy_ros_message,
+    (void *)&my_robot_interfaces__action__move_robot__feedback_message__destroy_ros_message,
     NULL, NULL);
   if (!pyobject_destroy_ros_message) {
     // previously added objects will be removed when the module is destroyed
@@ -3838,7 +3838,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "destroy_ros_message_msg__action__robot_movement__feedback_message",
+    "destroy_ros_message_msg__action__move_robot__feedback_message",
     pyobject_destroy_ros_message);
   if (err) {
     // the created capsule needs to be decremented
@@ -3849,7 +3849,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
 
   PyObject * pyobject_convert_from_py = NULL;
   pyobject_convert_from_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback_message__convert_from_py,
+    (void *)&my_robot_interfaces__action__move_robot__feedback_message__convert_from_py,
     NULL, NULL);
   if (!pyobject_convert_from_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3857,7 +3857,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_from_py_msg__action__robot_movement__feedback_message",
+    "convert_from_py_msg__action__move_robot__feedback_message",
     pyobject_convert_from_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3868,7 +3868,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
 
   PyObject * pyobject_convert_to_py = NULL;
   pyobject_convert_to_py = PyCapsule_New(
-    (void *)&my_robot_interfaces__action__robot_movement__feedback_message__convert_to_py,
+    (void *)&my_robot_interfaces__action__move_robot__feedback_message__convert_to_py,
     NULL, NULL);
   if (!pyobject_convert_to_py) {
     // previously added objects will be removed when the module is destroyed
@@ -3876,7 +3876,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "convert_to_py_msg__action__robot_movement__feedback_message",
+    "convert_to_py_msg__action__move_robot__feedback_message",
     pyobject_convert_to_py);
   if (err) {
     // the created capsule needs to be decremented
@@ -3887,7 +3887,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
 
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, RobotMovement_FeedbackMessage),
+    (void *)ROSIDL_GET_MSG_TYPE_SUPPORT(my_robot_interfaces, action, MoveRobot_FeedbackMessage),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3895,7 +3895,7 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_msg__action__robot_movement__feedback_message",
+    "type_support_msg__action__move_robot__feedback_message",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -3908,12 +3908,12 @@ _register_msg_type__action__robot_movement__feedback_message(PyObject * pymodule
 
 
 int8_t
-_register_action_type__action__robot_movement(PyObject * pymodule)
+_register_action_type__action__move_robot(PyObject * pymodule)
 {
   int8_t err;
   PyObject * pyobject_type_support = NULL;
   pyobject_type_support = PyCapsule_New(
-    (void *)ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, RobotMovement)(),
+    (void *)ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(rosidl_typesupport_c, my_robot_interfaces, action, MoveRobot)(),
     NULL, NULL);
   if (!pyobject_type_support) {
     // previously added objects will be removed when the module is destroyed
@@ -3921,7 +3921,7 @@ _register_action_type__action__robot_movement(PyObject * pymodule)
   }
   err = PyModule_AddObject(
     pymodule,
-    "type_support_action__action__robot_movement",
+    "type_support_action__action__move_robot",
     pyobject_type_support);
   if (err) {
     // the created capsule needs to be decremented
@@ -4086,67 +4086,67 @@ PyInit_my_robot_interfaces_s__rosidl_typesupport_c(void)
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__goal(pymodule);
+  err = _register_msg_type__action__move_robot__goal(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__result(pymodule);
+  err = _register_msg_type__action__move_robot__result(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__feedback(pymodule);
+  err = _register_msg_type__action__move_robot__feedback(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__send_goal__request(pymodule);
+  err = _register_msg_type__action__move_robot__send_goal__request(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__send_goal__response(pymodule);
+  err = _register_msg_type__action__move_robot__send_goal__response(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_srv_type__action__robot_movement__send_goal(pymodule);
+  err = _register_srv_type__action__move_robot__send_goal(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__get_result__request(pymodule);
+  err = _register_msg_type__action__move_robot__get_result__request(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__get_result__response(pymodule);
+  err = _register_msg_type__action__move_robot__get_result__response(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_srv_type__action__robot_movement__get_result(pymodule);
+  err = _register_srv_type__action__move_robot__get_result(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_msg_type__action__robot_movement__feedback_message(pymodule);
+  err = _register_msg_type__action__move_robot__feedback_message(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;
   }
 
-  err = _register_action_type__action__robot_movement(pymodule);
+  err = _register_action_type__action__move_robot(pymodule);
   if (err) {
     Py_XDECREF(pymodule);
     return NULL;

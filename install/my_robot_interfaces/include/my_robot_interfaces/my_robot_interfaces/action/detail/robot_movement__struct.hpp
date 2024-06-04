@@ -166,7 +166,7 @@ struct RobotMovement_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->position = 0ll;
+      this->reached_position = 0ll;
       this->message = "";
     }
   }
@@ -177,24 +177,24 @@ struct RobotMovement_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->position = 0ll;
+      this->reached_position = 0ll;
       this->message = "";
     }
   }
 
   // field types and members
-  using _position_type =
+  using _reached_position_type =
     int64_t;
-  _position_type position;
+  _reached_position_type reached_position;
   using _message_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _message_type message;
 
   // setters for named parameter idiom
-  Type & set__position(
+  Type & set__reached_position(
     const int64_t & _arg)
   {
-    this->position = _arg;
+    this->reached_position = _arg;
     return *this;
   }
   Type & set__message(
@@ -246,7 +246,7 @@ struct RobotMovement_Result_
   // comparison operators
   bool operator==(const RobotMovement_Result_ & other) const
   {
-    if (this->position != other.position) {
+    if (this->reached_position != other.reached_position) {
       return false;
     }
     if (this->message != other.message) {

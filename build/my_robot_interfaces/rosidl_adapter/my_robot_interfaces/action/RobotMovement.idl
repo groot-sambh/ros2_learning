@@ -15,7 +15,7 @@ module my_robot_interfaces {
     @verbatim (language="comment", text=
       "Result")
     struct RobotMovement_Result {
-      int64 position;
+      int64 reached_position;
 
       string message;
     };

@@ -134,10 +134,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: position
+  // member: reached_position
   {
-    out << "position: ";
-    rosidl_generator_traits::value_to_yaml(msg.position, out);
+    out << "reached_position: ";
+    rosidl_generator_traits::value_to_yaml(msg.reached_position, out);
     out << ", ";
   }
 
@@ -153,13 +153,13 @@ inline void to_block_style_yaml(
   const RobotMovement_Result & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: position
+  // member: reached_position
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "position: ";
-    rosidl_generator_traits::value_to_yaml(msg.position, out);
+    out << "reached_position: ";
+    rosidl_generator_traits::value_to_yaml(msg.reached_position, out);
     out << "\n";
   }
 

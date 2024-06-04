@@ -11,7 +11,7 @@
     "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/SetLed.idl",
     "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/CatchTurtle.idl",
     "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/CountUntil.idl",
-    "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/RobotMovement.idl"
+    "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/MoveRobot.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -37,7 +37,7 @@
     "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/SetLed.idl",
     "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/CatchTurtle.idl",
     "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/action/CountUntil.idl",
-    "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/action/RobotMovement.idl",
+    "/home/sambhav/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/action/MoveRobot.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

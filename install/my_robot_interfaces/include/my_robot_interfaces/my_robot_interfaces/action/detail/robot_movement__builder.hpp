@@ -95,15 +95,15 @@ private:
   ::my_robot_interfaces::action::RobotMovement_Result msg_;
 };
 
-class Init_RobotMovement_Result_position
+class Init_RobotMovement_Result_reached_position
 {
 public:
-  Init_RobotMovement_Result_position()
+  Init_RobotMovement_Result_reached_position()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_RobotMovement_Result_message position(::my_robot_interfaces::action::RobotMovement_Result::_position_type arg)
+  Init_RobotMovement_Result_message reached_position(::my_robot_interfaces::action::RobotMovement_Result::_reached_position_type arg)
   {
-    msg_.position = std::move(arg);
+    msg_.reached_position = std::move(arg);
     return Init_RobotMovement_Result_message(msg_);
   }
 
@@ -122,7 +122,7 @@ template<>
 inline
 auto build<::my_robot_interfaces::action::RobotMovement_Result>()
 {
-  return my_robot_interfaces::action::builder::Init_RobotMovement_Result_position();
+  return my_robot_interfaces::action::builder::Init_RobotMovement_Result_reached_position();
 }
 
 }  // namespace my_robot_interfaces

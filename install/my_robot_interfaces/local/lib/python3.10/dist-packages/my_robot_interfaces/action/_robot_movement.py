@@ -201,12 +201,12 @@ class RobotMovement_Result(metaclass=Metaclass_RobotMovement_Result):
     """Message class 'RobotMovement_Result'."""
 
     __slots__ = [
-        '_position',
+        '_reached_position',
         '_message',
     ]
 
     _fields_and_field_types = {
-        'position': 'int64',
+        'reached_position': 'int64',
         'message': 'string',
     }
 
@@ -219,7 +219,7 @@ class RobotMovement_Result(metaclass=Metaclass_RobotMovement_Result):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.position = kwargs.get('position', int())
+        self.reached_position = kwargs.get('reached_position', int())
         self.message = kwargs.get('message', str())
 
     def __repr__(self):
@@ -251,7 +251,7 @@ class RobotMovement_Result(metaclass=Metaclass_RobotMovement_Result):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.position != other.position:
+        if self.reached_position != other.reached_position:
             return False
         if self.message != other.message:
             return False
@@ -263,19 +263,19 @@ class RobotMovement_Result(metaclass=Metaclass_RobotMovement_Result):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def position(self):
-        """Message field 'position'."""
-        return self._position
+    def reached_position(self):
+        """Message field 'reached_position'."""
+        return self._reached_position
 
-    @position.setter
-    def position(self, value):
+    @reached_position.setter
+    def reached_position(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'position' field must be of type 'int'"
+                "The 'reached_position' field must be of type 'int'"
             assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'position' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._position = value
+                "The 'reached_position' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._reached_position = value
 
     @builtins.property
     def message(self):

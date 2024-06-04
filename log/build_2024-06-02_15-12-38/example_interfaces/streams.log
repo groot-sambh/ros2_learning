@@ -1,0 +1,35 @@
+[0.015s] Invoking command in '/home/sambhav/ros2_ws/build/example_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/turtlesim_catch_them_all:/home/sambhav/ros2_ws/install/my_py_pkg:/home/sambhav/ros2_ws/install/action_py:/home/sambhav/ros2_ws/install/lifecycle_py:/home/sambhav/my_swarm/install/bot1_controller:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/example_interfaces -- -j8 -l8
+[0.092s] [  0%] Built target example_interfaces__cpp
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_generator_c[0m
+[0.120s] [  0%] Built target ament_cmake_python_copy_example_interfaces
+[0.123s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_cpp[0m
+[0.124s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.127s] [ 12%] Built target example_interfaces__rosidl_generator_c
+[0.162s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_c[0m
+[0.168s] [ 25%] Built target example_interfaces__rosidl_typesupport_introspection_cpp
+[0.168s] [ 37%] Built target example_interfaces__rosidl_typesupport_cpp
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.175s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_introspection_c[0m
+[0.178s] [ 49%] Built target example_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.182s] [ 61%] Built target example_interfaces__rosidl_typesupport_c
+[0.197s] [ 74%] Built target example_interfaces__rosidl_typesupport_introspection_c
+[0.201s] [ 87%] Built target example_interfaces__rosidl_typesupport_fastrtps_c
+[0.218s] [ 87%] Built target example_interfaces
+[0.237s] [ 87%] Built target example_interfaces__py
+[0.259s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_generator_py[0m
+[0.288s] [ 99%] Built target example_interfaces__rosidl_generator_py
+[0.299s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[0.302s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_c__pyext[0m
+[0.302s] [35m[1mConsolidate compiler generated dependencies of target example_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.311s] [ 99%] Built target example_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.314s] [100%] Built target example_interfaces__rosidl_typesupport_c__pyext
+[0.319s] [100%] Built target example_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.361s] running egg_info
+[0.361s] writing example_interfaces.egg-info/PKG-INFO
+[0.362s] writing dependency_links to example_interfaces.egg-info/dependency_links.txt
+[0.362s] writing top-level names to example_interfaces.egg-info/top_level.txt
+[0.364s] reading manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[0.365s] writing manifest file 'example_interfaces.egg-info/SOURCES.txt'
+[0.385s] [100%] Built target ament_cmake_python_build_example_interfaces_egg
+[0.393s] Invoked command in '/home/sambhav/ros2_ws/build/example_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sambhav/ros2_ws/install/turtlesim_catch_them_all:/home/sambhav/ros2_ws/install/my_py_pkg:/home/sambhav/ros2_ws/install/action_py:/home/sambhav/ros2_ws/install/lifecycle_py:/home/sambhav/my_swarm/install/bot1_controller:/opt/ros/humble /usr/bin/cmake --build /home/sambhav/ros2_ws/build/example_interfaces -- -j8 -l8

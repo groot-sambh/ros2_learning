@@ -9,6 +9,6 @@
     "/home/sambhav/ros2_ws/src/my_robot_interfaces:srv/SetLed.srv",
     "/home/sambhav/ros2_ws/src/my_robot_interfaces:srv/CatchTurtle.srv",
     "/home/sambhav/ros2_ws/src/my_robot_interfaces:action/CountUntil.action",
-    "/home/sambhav/ros2_ws/src/my_robot_interfaces:action/RobotMovement.action"
+    "/home/sambhav/ros2_ws/src/my_robot_interfaces:action/MoveRobot.action"
   ]
 }

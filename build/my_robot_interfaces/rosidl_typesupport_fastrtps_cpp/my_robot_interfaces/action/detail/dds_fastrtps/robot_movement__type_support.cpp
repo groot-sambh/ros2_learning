@@ -264,8 +264,8 @@ cdr_serialize(
   const my_robot_interfaces::action::RobotMovement_Result & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: position
-  cdr << ros_message.position;
+  // Member: reached_position
+  cdr << ros_message.reached_position;
   // Member: message
   cdr << ros_message.message;
   return true;
@@ -277,8 +277,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_robot_interfaces::action::RobotMovement_Result & ros_message)
 {
-  // Member: position
-  cdr >> ros_message.position;
+  // Member: reached_position
+  cdr >> ros_message.reached_position;
 
   // Member: message
   cdr >> ros_message.message;
@@ -299,9 +299,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: position
+  // Member: reached_position
   {
-    size_t item_size = sizeof(ros_message.position);
+    size_t item_size = sizeof(ros_message.reached_position);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -333,7 +333,7 @@ max_serialized_size_RobotMovement_Result(
   is_plain = true;
 
 
-  // Member: position
+  // Member: reached_position
   {
     size_t array_size = 1;
 

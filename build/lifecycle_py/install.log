@@ -1,6 +1,8 @@
+/home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/move_robot_server_copy.py
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/__init__.py
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/number_publisher.py
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/lifecycle_node_manager.py
+/home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/__pycache__/move_robot_server_copy.cpython-310.pyc
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/__pycache__/__init__.cpython-310.pyc
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/__pycache__/number_publisher.cpython-310.pyc
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py/__pycache__/lifecycle_node_manager.cpython-310.pyc
@@ -14,4 +16,5 @@
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py-0.0.0-py3.10.egg-info/top_level.txt
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/python3.10/site-packages/lifecycle_py-0.0.0-py3.10.egg-info/requires.txt
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/lifecycle_py/lifecycle_node_manager
+/home/sambhav/ros2_ws/install/lifecycle_py/lib/lifecycle_py/move_robot_server_copy
 /home/sambhav/ros2_ws/install/lifecycle_py/lib/lifecycle_py/number_publisher

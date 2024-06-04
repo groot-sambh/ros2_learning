@@ -254,7 +254,7 @@ my_robot_interfaces__action__RobotMovement_Result__init(my_robot_interfaces__act
   if (!msg) {
     return false;
   }
-  // position
+  // reached_position
   // message
   if (!rosidl_runtime_c__String__init(&msg->message)) {
     my_robot_interfaces__action__RobotMovement_Result__fini(msg);
@@ -269,7 +269,7 @@ my_robot_interfaces__action__RobotMovement_Result__fini(my_robot_interfaces__act
   if (!msg) {
     return;
   }
-  // position
+  // reached_position
   // message
   rosidl_runtime_c__String__fini(&msg->message);
 }
@@ -280,8 +280,8 @@ my_robot_interfaces__action__RobotMovement_Result__are_equal(const my_robot_inte
   if (!lhs || !rhs) {
     return false;
   }
-  // position
-  if (lhs->position != rhs->position) {
+  // reached_position
+  if (lhs->reached_position != rhs->reached_position) {
     return false;
   }
   // message
@@ -301,8 +301,8 @@ my_robot_interfaces__action__RobotMovement_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // position
-  output->position = input->position;
+  // reached_position
+  output->reached_position = input->reached_position;
   // message
   if (!rosidl_runtime_c__String__copy(
       &(input->message), &(output->message)))

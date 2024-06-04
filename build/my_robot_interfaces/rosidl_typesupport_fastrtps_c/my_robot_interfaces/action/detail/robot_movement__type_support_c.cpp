@@ -269,9 +269,9 @@ static bool _RobotMovement_Result__cdr_serialize(
     return false;
   }
   const _RobotMovement_Result__ros_msg_type * ros_message = static_cast<const _RobotMovement_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: position
+  // Field name: reached_position
   {
-    cdr << ros_message->position;
+    cdr << ros_message->reached_position;
   }
 
   // Field name: message
@@ -300,9 +300,9 @@ static bool _RobotMovement_Result__cdr_deserialize(
     return false;
   }
   _RobotMovement_Result__ros_msg_type * ros_message = static_cast<_RobotMovement_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: position
+  // Field name: reached_position
   {
-    cdr >> ros_message->position;
+    cdr >> ros_message->reached_position;
   }
 
   // Field name: message
@@ -338,9 +338,9 @@ size_t get_serialized_size_my_robot_interfaces__action__RobotMovement_Result(
   (void)padding;
   (void)wchar_size;
 
-  // field.name position
+  // field.name reached_position
   {
-    size_t item_size = sizeof(ros_message->position);
+    size_t item_size = sizeof(ros_message->reached_position);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -377,7 +377,7 @@ size_t max_serialized_size_my_robot_interfaces__action__RobotMovement_Result(
   full_bounded = true;
   is_plain = true;
 
-  // member: position
+  // member: reached_position
   {
     size_t array_size = 1;
 

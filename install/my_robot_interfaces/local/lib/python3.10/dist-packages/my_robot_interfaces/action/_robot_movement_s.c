@@ -168,13 +168,13 @@ bool my_robot_interfaces__action__robot_movement__result__convert_from_py(PyObje
     assert(strncmp("my_robot_interfaces.action._robot_movement.RobotMovement_Result", full_classname_dest, 63) == 0);
   }
   my_robot_interfaces__action__RobotMovement_Result * ros_message = _ros_message;
-  {  // position
-    PyObject * field = PyObject_GetAttrString(_pymsg, "position");
+  {  // reached_position
+    PyObject * field = PyObject_GetAttrString(_pymsg, "reached_position");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->position = PyLong_AsLongLong(field);
+    ros_message->reached_position = PyLong_AsLongLong(field);
     Py_DECREF(field);
   }
   {  // message
@@ -214,11 +214,11 @@ PyObject * my_robot_interfaces__action__robot_movement__result__convert_to_py(vo
     }
   }
   my_robot_interfaces__action__RobotMovement_Result * ros_message = (my_robot_interfaces__action__RobotMovement_Result *)raw_ros_message;
-  {  // position
+  {  // reached_position
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->position);
+    field = PyLong_FromLongLong(ros_message->reached_position);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "position", field);
+      int rc = PyObject_SetAttrString(_pymessage, "reached_position", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

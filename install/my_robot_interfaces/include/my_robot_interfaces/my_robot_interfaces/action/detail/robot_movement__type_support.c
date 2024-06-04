@@ -142,14 +142,14 @@ void my_robot_interfaces__action__RobotMovement_Result__rosidl_typesupport_intro
 
 static rosidl_typesupport_introspection_c__MessageMember my_robot_interfaces__action__RobotMovement_Result__rosidl_typesupport_introspection_c__RobotMovement_Result_message_member_array[2] = {
   {
-    "position",  // name
+    "reached_position",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_robot_interfaces__action__RobotMovement_Result, position),  // bytes offset in struct
+    offsetof(my_robot_interfaces__action__RobotMovement_Result, reached_position),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
