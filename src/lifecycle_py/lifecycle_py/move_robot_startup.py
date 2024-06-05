@@ -14,7 +14,7 @@ class MoveRobotStartup(Node):
         self.get_logger().info("Nodes: " + str(node_name_list))
         self.client_list = []
         for node_name in node_name_list:
-            service_change_state_name = "/" + node_name_list + "/change_state"
+            service_change_state_name = "/" + node_name + "/change_state"
         self.client_list.append(self.create_client(ChangeState, service_change_state_name))
 
     def change_state(self, transition: Transition):
@@ -22,7 +22,7 @@ class MoveRobotStartup(Node):
             client.wait_for_service()
             request = ChangeState.Request()
             request.transition = transition
-            future = self.client.call_async(request)
+            future = client.call_async(request)
             rclpy.spin_until_future_complete(self, future)
 
     def initialization_sequence(self):
