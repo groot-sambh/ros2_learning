@@ -2,7 +2,6 @@
 import rclpy
 from rclpy.node import Node
 import time
-from rclpy.executors import MultiThreadedExecutor
 
 
 class Node1(Node):
@@ -28,8 +27,7 @@ class Node1(Node):
 def main(args=None):
     rclpy.init(args=args)
     node1 = Node1()
-    executor = MultiThreadedExecutor()
-    executor = 
+    rclpy.spin(node1)
     rclpy.shutdown()
 
 

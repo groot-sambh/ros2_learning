@@ -1,0 +1,44 @@
+[0.504s] Invoking command in '/home/sambhav/ros2_ws/src/executors_py': PYTHONPATH=/home/sambhav/ros2_ws/src/build/executors_py/prefix_override:/home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/executors_py build --build-base /home/sambhav/ros2_ws/src/build/executors_py/build install --record /home/sambhav/ros2_ws/src/build/executors_py/install.log --single-version-externally-managed install_data
+[0.680s] running egg_info
+[0.680s] creating ../build/executors_py/executors_py.egg-info
+[0.680s] writing ../build/executors_py/executors_py.egg-info/PKG-INFO
+[0.680s] writing dependency_links to ../build/executors_py/executors_py.egg-info/dependency_links.txt
+[0.680s] writing entry points to ../build/executors_py/executors_py.egg-info/entry_points.txt
+[0.680s] writing requirements to ../build/executors_py/executors_py.egg-info/requires.txt
+[0.680s] writing top-level names to ../build/executors_py/executors_py.egg-info/top_level.txt
+[0.681s] writing manifest file '../build/executors_py/executors_py.egg-info/SOURCES.txt'
+[0.682s] reading manifest file '../build/executors_py/executors_py.egg-info/SOURCES.txt'
+[0.682s] writing manifest file '../build/executors_py/executors_py.egg-info/SOURCES.txt'
+[0.682s] running build
+[0.682s] running build_py
+[0.682s] creating /home/sambhav/ros2_ws/src/build/executors_py/build
+[0.682s] creating /home/sambhav/ros2_ws/src/build/executors_py/build/lib
+[0.682s] creating /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py
+[0.682s] copying executors_py/__init__.py -> /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py
+[0.682s] copying executors_py/single_threaded_executor.py -> /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py
+[0.682s] copying executors_py/number_publisher.py -> /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py
+[0.682s] copying executors_py/multi_threaded_executor.py -> /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py
+[0.683s] running install
+[0.683s] running install_lib
+[0.683s] creating /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py
+[0.683s] copying /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py/__init__.py -> /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py
+[0.683s] copying /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py/single_threaded_executor.py -> /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py
+[0.683s] copying /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py/number_publisher.py -> /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py
+[0.683s] copying /home/sambhav/ros2_ws/src/build/executors_py/build/lib/executors_py/multi_threaded_executor.py -> /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py
+[0.684s] byte-compiling /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py/__init__.py to __init__.cpython-310.pyc
+[0.684s] byte-compiling /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py/single_threaded_executor.py to single_threaded_executor.cpython-310.pyc
+[0.684s] byte-compiling /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py/number_publisher.py to number_publisher.cpython-310.pyc
+[0.684s] byte-compiling /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py/multi_threaded_executor.py to multi_threaded_executor.cpython-310.pyc
+[0.684s] running install_data
+[0.684s] creating /home/sambhav/ros2_ws/src/install/executors_py/share/ament_index
+[0.685s] creating /home/sambhav/ros2_ws/src/install/executors_py/share/ament_index/resource_index
+[0.685s] creating /home/sambhav/ros2_ws/src/install/executors_py/share/ament_index/resource_index/packages
+[0.685s] copying resource/executors_py -> /home/sambhav/ros2_ws/src/install/executors_py/share/ament_index/resource_index/packages
+[0.685s] copying package.xml -> /home/sambhav/ros2_ws/src/install/executors_py/share/executors_py
+[0.685s] running install_egg_info
+[0.686s] Copying ../build/executors_py/executors_py.egg-info to /home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages/executors_py-0.0.0-py3.10.egg-info
+[0.686s] running install_scripts
+[0.700s] Installing multi_threaded_executor script to /home/sambhav/ros2_ws/src/install/executors_py/lib/executors_py
+[0.700s] Installing single_threaded_executor script to /home/sambhav/ros2_ws/src/install/executors_py/lib/executors_py
+[0.700s] writing list of installed files to '/home/sambhav/ros2_ws/src/build/executors_py/install.log'
+[0.719s] Invoked command in '/home/sambhav/ros2_ws/src/executors_py' returned '0': PYTHONPATH=/home/sambhav/ros2_ws/src/build/executors_py/prefix_override:/home/sambhav/ros2_ws/src/install/executors_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/executors_py build --build-base /home/sambhav/ros2_ws/src/build/executors_py/build install --record /home/sambhav/ros2_ws/src/build/executors_py/install.log --single-version-externally-managed install_data
